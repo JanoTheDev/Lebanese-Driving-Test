@@ -1,4 +1,6 @@
-{
+import { QuizData } from "@/types/quiz";
+
+export const questions: QuizData = {
     "questions": [
         {
             "id": 1,
@@ -3423,3 +3425,5 @@
         }
     ]
 }
+
+export default questions; 

@@ -108,7 +108,6 @@ export default function Home() {
       </main>
 
       <footer>
-        <p className="copyright">© 2024 Lebanese Driving Test</p>
         <div className="attribution">
           <span>Made by </span>
           <a

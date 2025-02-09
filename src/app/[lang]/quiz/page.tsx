@@ -1,50 +1,48 @@
 import Quiz from '@/components/Quiz';
-import { Language, SUPPORTED_LANGUAGES } from '@/types/quiz';
+import { Language, SUPPORTED_LANGUAGES, QuizData } from '@/types/quiz';
 import { notFound } from 'next/navigation';
-import { Metadata } from 'next';
 
-// Define correct params type for Next.js 13+ pages
-interface PageProps {
-  params: {
-    lang: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-async function getQuizData(lang: Language) {
+async function getQuizData(lang: Language): Promise<any> {
   try {
-    // Dynamic import based on language
-    const quizData = await import(`@/data/questions_${lang}.json`);
-    return quizData.default;
+    const { questions } = await import(`@/data/questions_${lang}`);
+    return questions;
   } catch (error) {
     console.error(`Failed to load quiz data for language: ${lang}`, error);
-    return null;
+    throw error;
   }
 }
 
-export default async function QuizPage({ params }: PageProps) {
-  // Type guard for language
-  if (!SUPPORTED_LANGUAGES.includes(params.lang as Language)) {
+export default async function QuizPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const resolvedParams = await params;
+  
+  if (!SUPPORTED_LANGUAGES.includes(resolvedParams.lang as Language)) {
     notFound();
   }
 
-  const lang = params.lang as Language;
-  const quizData = await getQuizData(lang);
-
-  if (!quizData) {
+  const lang = resolvedParams.lang as Language;
+  
+  try {
+    const quizData = await getQuizData(lang);
+    
+    return (
+      <div className="container">
+        <Quiz quizData={quizData} lang={lang} />
+      </div>
+    );
+  } catch {
     notFound();
   }
-
-  return (
-    <div className="container">
-      <Quiz quizData={quizData} lang={lang} />
-    </div>
-  );
 }
 
-// Generate static params for supported languages
 export function generateStaticParams() {
   return SUPPORTED_LANGUAGES.map((lang) => ({
     lang,
   }));
-} 
+}
+
+export const dynamic = 'force-static';
+export const revalidate = false; 
