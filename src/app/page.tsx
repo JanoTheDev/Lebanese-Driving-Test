@@ -100,13 +100,10 @@ export default function Home() {
             <button
               className="language-button"
               onClick={() => handleLanguageSelect("ar")}
-              disabled
-              style={{ opacity: 0.5, cursor: 'not-allowed' }}
             >
               العربية
             </button>
           </div>
-          <p className="coming-soon">Arabic coming soon</p>
         </div>
       </main>
 
