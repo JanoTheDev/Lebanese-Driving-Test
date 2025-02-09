@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lebanese Driving Test Practice 🚗
 
-## Getting Started
+A free web application to help people practice for the Lebanese driving license computer test. This project aims to provide an accessible and user-friendly way to prepare for the official test.
 
-First, run the development server:
+## Features ✨
 
+- 30 randomized questions from the official question bank
+- Questions divided into three categories:
+  - Road Signs (10 questions)
+  - Safety Rules (10 questions)
+  - Traffic Laws (10 questions)
+- Available in three languages:
+  - English
+  - French
+  - Arabic
+- Timer to simulate real test conditions
+- Instant feedback and detailed review
+- Dark/Light mode support
+- Mobile-friendly design
+
+## Try it Online 🌐
+
+Visit [https://drivingtestlb.vercel.app/](https://drivingtestlb.vercel.app/) to use the application directly.
+
+## Run it Locally 💻
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- npm (comes with Node.js) or [yarn](https://yarnpkg.com/)
+
+### Installation Steps
+
+1. Clone the repository
+```bash
+git clone https://github.com/JanoTheDev/Lebanese-Driving-Test.git
+cd Lebanese-Driving-Test
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing 🤝
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is open source and we welcome contributions! Here's how you can help:
 
-## Learn More
+1. Fork the repository
+2. Create a new branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+Areas where we need help:
+- Adding more questions to the database
+- Improving translations
+- Enhancing UI/UX
+- Bug fixes
+- Documentation improvements
+- Feature suggestions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## About the Test 📝
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The practice test simulates the official Lebanese driving license computer test
+- 30 questions must be answered within 15 minutes
+- Passing score is 26/30 (87%)
+- Questions are randomly selected from the official question bank
+- Available in English, French, and Arabic
 
-## Deploy on Vercel
+## License 📄
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+MIT License
+
+Copyright (c) 2024 JanoTheDev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Support 💬
+
+If you need help or have questions:
+- Open an issue on GitHub
+- Report bugs in the Issues section
+- Contact us through GitHub
+
+## Acknowledgments 🙏
+
+- Questions sourced from official Lebanese driving test materials
+- Built with Next.js and TypeScript
+
+---
+
+Made with ❤️ by [JanoTheDev](https://github.com/JanoTheDev)
