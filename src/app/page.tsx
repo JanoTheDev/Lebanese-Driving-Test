@@ -78,7 +78,7 @@ export default function Home() {
         )}
       </button>
 
-      <main>
+      <main className="main-container">
         <h1>Official Lebanese Driving Questions Test</h1>
 
         <div className="language-section">
