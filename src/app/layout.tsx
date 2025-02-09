@@ -14,15 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      <body>
+        {children}
         <Script
-          defer
+          strategy="afterInteractive"
           src="https://cloud.umami.is/script.js"
           data-website-id="aebfc48a-7794-41ff-a106-ed88beb8900a"
         />
-      </head>
-      <body>
-        {children}
       </body>
     </html>
   );
