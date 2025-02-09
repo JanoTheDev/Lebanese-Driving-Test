@@ -63,14 +63,6 @@ This project is open source and we welcome contributions! Here's how you can hel
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Areas where we need help:
-- Adding more questions to the database
-- Improving translations
-- Enhancing UI/UX
-- Bug fixes
-- Documentation improvements
-- Feature suggestions
-
 ## About the Test 📝
 
 - The practice test simulates the official Lebanese driving license computer test
