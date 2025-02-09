@@ -99,7 +99,7 @@ export default function Quiz({ quizData, lang }: QuizProps) {
 
   useEffect(() => {
     if (questionsRef.current.length === 0) {
-      // Get all signs questions (121-221)
+      // Get signs questions (121-221)
       const signsQuestions = quizData.questions.filter(
         (q) => q.id >= 121 && q.id <= 221
       );
@@ -108,18 +108,25 @@ export default function Quiz({ quizData, lang }: QuizProps) {
         category: "Signs",
         imageUrl: `/images/signs/${q.id}.png`,
       }));
-      const selected1 = shuffleArray(signQuestionsWithCategory).slice(0, 15);
+      const selectedSigns = shuffleArray(signQuestionsWithCategory).slice(0, 10);
 
-      // Get other questions
-      const otherQuestions = quizData.questions.filter(
-        (q) => (q.id >= 1 && q.id < 121) || (q.id > 221 && q.id <= 342)
+      // Get Safety questions
+      const safetyQuestions = quizData.questions.filter(
+        (q) => q.category === "Safety"
       );
-      const selected2 = shuffleArray(otherQuestions).slice(0, 15);
+      const selectedSafety = shuffleArray(safetyQuestions).slice(0, 10);
 
-      // Combine and sort
-      questionsRef.current = Array.from(
-        new Map([...selected1, ...selected2].map((q) => [q.id, q])).values()
-      ).sort((a, b) => a.id - b.id);
+      // Get Law questions
+      const lawQuestions = quizData.questions.filter(
+        (q) => q.category === "Law"
+      );
+      const selectedLaw = shuffleArray(lawQuestions).slice(0, 10);
+
+      // Combine all selected questions
+      const allSelectedQuestions = [...selectedSigns, ...selectedSafety, ...selectedLaw];
+      
+      // Shuffle the combined questions
+      questionsRef.current = shuffleArray(allSelectedQuestions);
       
       setQuestions(questionsRef.current);
     }
@@ -296,10 +303,7 @@ export default function Quiz({ quizData, lang }: QuizProps) {
               {question.answers.map((answer, answerIndex) => (
                 <div
                   key={answerIndex}
-                  className={`review-answer ${getAnswerClass(
-                    question,
-                    answer
-                  )}`}
+                  className={`review-answer ${getAnswerClass(question, answer)}`}
                 >
                   {answer}
                 </div>
@@ -396,6 +400,10 @@ export default function Quiz({ quizData, lang }: QuizProps) {
             className="question-container"
           >
             <div className="question-header">
+              <div className="question-category">
+                {questions[currentQuestion].category}
+              </div>
+              
               {questions[currentQuestion].category === "Signs" &&
                 questions[currentQuestion].imageUrl && (
                   <div className="question-image-container">
@@ -408,7 +416,7 @@ export default function Quiz({ quizData, lang }: QuizProps) {
                       priority
                     />
                   </div>
-                )}
+              )}
 
               <h2 className="question-text">
                 {questions[currentQuestion].question}
