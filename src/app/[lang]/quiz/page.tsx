@@ -1,11 +1,14 @@
 import Quiz from '@/components/Quiz';
 import { Language, SUPPORTED_LANGUAGES } from '@/types/quiz';
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 
-interface Props {
+// Define correct params type for Next.js 13+ pages
+interface PageProps {
   params: {
     lang: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 async function getQuizData(lang: Language) {
@@ -19,7 +22,7 @@ async function getQuizData(lang: Language) {
   }
 }
 
-export default async function QuizPage({ params }: Props) {
+export default async function QuizPage({ params }: PageProps) {
   // Type guard for language
   if (!SUPPORTED_LANGUAGES.includes(params.lang as Language)) {
     notFound();
