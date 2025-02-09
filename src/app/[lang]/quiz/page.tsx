@@ -4,7 +4,12 @@ import { notFound } from 'next/navigation';
 
 async function getQuizData(lang: Language): Promise<any> {
   try {
-    const { questions } = await import(`@/data/questions_${lang}`);
+    const module = await import(`@/data/questions_${lang}`);
+    // Ensure we're returning a stable reference
+    const questions = module.default;
+    if (!questions || !questions.questions) {
+      throw new Error('Invalid quiz data format');
+    }
     return questions;
   } catch (error) {
     console.error(`Failed to load quiz data for language: ${lang}`, error);
@@ -28,9 +33,14 @@ export default async function QuizPage({
   try {
     const quizData = await getQuizData(lang);
     
+    // Use key prop to maintain component instance
     return (
       <div className="container">
-        <Quiz quizData={quizData} lang={lang} />
+        <Quiz 
+          key={`quiz-${lang}`} 
+          quizData={quizData} 
+          lang={lang} 
+        />
       </div>
     );
   } catch {
@@ -44,5 +54,6 @@ export function generateStaticParams() {
   }));
 }
 
+// Ensure static rendering
 export const dynamic = 'force-static';
 export const revalidate = false; 

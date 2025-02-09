@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Question, QuizData, UserAnswers, Language } from "@/types/quiz";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -89,36 +89,40 @@ export default function Quiz({ quizData, lang }: QuizProps) {
   const [userAnswers, setUserAnswers] = useState<UserAnswers>({});
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState<number | null>(null);
+  const [calculatedScore, setCalculatedScore] = useState<number | null>(null);
   const [showReview, setShowReview] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(15 * 60); // 15 minutes in seconds
   const [theme, setTheme] = useState<"light" | "dark">("light");
+  const questionsRef = useRef<Question[]>([]);
+  const userAnswersRef = useRef<UserAnswers>({});
 
   useEffect(() => {
-    // Get all signs questions (121-221)
-    const signsQuestions = quizData.questions.filter(
-      (q) => q.id >= 121 && q.id <= 221
-    );
-    // Make sure they all have the Signs category
-    const signQuestionsWithCategory = signsQuestions.map((q) => ({
-      ...q,
-      category: "Signs",
-      imageUrl: `/images/signs/${q.id}.png`, // Assuming images will be named by question ID
-    }));
-    const selected1 = shuffleArray(signQuestionsWithCategory).slice(0, 15);
+    if (questionsRef.current.length === 0) {
+      // Get all signs questions (121-221)
+      const signsQuestions = quizData.questions.filter(
+        (q) => q.id >= 121 && q.id <= 221
+      );
+      const signQuestionsWithCategory = signsQuestions.map((q) => ({
+        ...q,
+        category: "Signs",
+        imageUrl: `/images/signs/${q.id}.png`,
+      }));
+      const selected1 = shuffleArray(signQuestionsWithCategory).slice(0, 15);
 
-    // Get other questions (1-120 and 222-342)
-    const otherQuestions = quizData.questions.filter(
-      (q) => (q.id >= 1 && q.id < 121) || (q.id > 221 && q.id <= 342)
-    );
-    const selected2 = shuffleArray(otherQuestions).slice(0, 15);
+      // Get other questions
+      const otherQuestions = quizData.questions.filter(
+        (q) => (q.id >= 1 && q.id < 121) || (q.id > 221 && q.id <= 342)
+      );
+      const selected2 = shuffleArray(otherQuestions).slice(0, 15);
 
-    // Combine and sort by id, ensure no duplicates
-    const uniqueQuestions = Array.from(
-      new Map([...selected1, ...selected2].map((q) => [q.id, q])).values()
-    ).sort((a, b) => a.id - b.id);
-
-    setQuestions(uniqueQuestions);
+      // Combine and sort
+      questionsRef.current = Array.from(
+        new Map([...selected1, ...selected2].map((q) => [q.id, q])).values()
+      ).sort((a, b) => a.id - b.id);
+      
+      setQuestions(questionsRef.current);
+    }
   }, [quizData]);
 
   useEffect(() => {
@@ -161,13 +165,12 @@ export default function Quiz({ quizData, lang }: QuizProps) {
   const handleAnswer = (answer: string) => {
     setUserAnswers((prev) => {
       const newAnswers = { ...prev };
-      // If the answer is already selected, remove it (deselect)
       if (newAnswers[questions[currentQuestion].id] === answer) {
         delete newAnswers[questions[currentQuestion].id];
       } else {
-        // Otherwise, select the new answer
         newAnswers[questions[currentQuestion].id] = answer;
       }
+      userAnswersRef.current = newAnswers;
       return newAnswers;
     });
   };
@@ -180,19 +183,24 @@ export default function Quiz({ quizData, lang }: QuizProps) {
 
   const calculateScore = () => {
     let correctAnswers = 0;
-    questions.forEach((question) => {
-      if (userAnswers[question.id] === question.correctAnswer) {
+    questionsRef.current.forEach((question) => {
+      if (userAnswersRef.current[question.id] === question.correctAnswer) {
         correctAnswers++;
       }
     });
+    console.log('Calculated score:', correctAnswers);
     return correctAnswers;
   };
 
   const handleSubmit = () => {
-    const finalScore = calculateScore();
-    setScore(finalScore);
+    if (calculatedScore === null) {
+      const finalScore = calculateScore();
+      console.log('Setting final score:', finalScore);
+      setCalculatedScore(finalScore);
+      setScore(finalScore);
+    }
     setIsSubmitted(true);
-    setTimeRemaining(0); // Stop the timer
+    setTimeRemaining(0);
   };
 
   const getAnswerClass = (question: Question, answer: string) => {
@@ -222,15 +230,20 @@ export default function Quiz({ quizData, lang }: QuizProps) {
     }
   };
 
+  const toggleReview = (show: boolean) => {
+    setShowReview(show);
+  };
+
   if (isSubmitted && !showReview) {
+    console.log('Rendering results with score:', calculatedScore);
     return (
       <div className="quiz-results">
         <h2>{uiText[lang].score}</h2>
         <div className="score">
-          {score} {uiText[lang].outOf} {questions.length}
+          {calculatedScore ?? 0} {uiText[lang].outOf} {questions.length}
         </div>
         <div className="result-message">
-          {score >= 26 ? (
+          {(calculatedScore ?? 0) >= 26 ? (
             <p className="passed">{uiText[lang].passed}</p>
           ) : (
             <>
@@ -240,7 +253,7 @@ export default function Quiz({ quizData, lang }: QuizProps) {
           )}
         </div>
         <div className="result-buttons">
-          <button className="review-button" onClick={() => setShowReview(true)}>
+          <button className="review-button" onClick={() => toggleReview(true)}>
             {uiText[lang].review}
           </button>
           <button
@@ -258,6 +271,9 @@ export default function Quiz({ quizData, lang }: QuizProps) {
     return (
       <div className="review-container">
         <h2>{uiText[lang].review}</h2>
+        <div className="score-display">
+          {calculatedScore ?? 0} {uiText[lang].outOf} {questions.length}
+        </div>
         {questions.map((question, index) => (
           <div key={question.id} className="review-question">
             <h3>Question {index + 1}</h3>
@@ -291,7 +307,7 @@ export default function Quiz({ quizData, lang }: QuizProps) {
             </div>
           </div>
         ))}
-        <button className="back-button" onClick={() => setShowReview(false)}>
+        <button className="back-button" onClick={() => toggleReview(false)}>
           {uiText[lang].backToQuiz}
         </button>
       </div>
