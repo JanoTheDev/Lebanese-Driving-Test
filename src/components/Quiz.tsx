@@ -32,7 +32,7 @@ const uiText = {
     seconds: "seconds",
     toggleDark: "Switch to dark mode",
     toggleLight: "Switch to light mode",
-    madeBy: "Made by",
+    madeBy: "Made with ❤️  by",
   },
   fr: {
     previous: "Précédent",
@@ -56,7 +56,7 @@ const uiText = {
     seconds: "secondes",
     toggleDark: "Passer en mode sombre",
     toggleLight: "Passer en mode clair",
-    madeBy: "Créé par",
+    madeBy: "Créé avec ❤️ par",
   },
   ar: {
     previous: "السابق",
@@ -80,7 +80,7 @@ const uiText = {
     seconds: "ثانية",
     toggleDark: "التبديل إلى الوضع الداكن",
     toggleLight: "التبديل إلى الوضع الفاتح",
-    madeBy: "صنع بواسطة",
+    madeBy: "تم الإنشاء باستخدام ❤️ بواسطة", 
   },
 } as const;
 
