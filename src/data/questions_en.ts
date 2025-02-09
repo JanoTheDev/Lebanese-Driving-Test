@@ -11,7 +11,7 @@ export const questions: QuizData = {
                 "Sound the horn",
                 "Turn on the regular headlights (low beam) and speed up"
             ],
-            "correctAnswer": "Turn on the regular headlights (low beam) and speed up"
+            "correctAnswer": "Turn on the regular headlights (low beam) and slow down"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@ export const questions: QuizData = {
                 "Turn on the high beam",
                 "Not use car headlights"
             ],
-            "correctAnswer": "Not use car headlights"
+            "correctAnswer": "Turn on the normal headlights (low beam)"
         },
         {
             "id": 3,
@@ -44,7 +44,7 @@ export const questions: QuizData = {
                 "Turn off the engine",
                 "Keep the engine running"
             ],
-            "correctAnswer": "Keep the engine running"
+            "correctAnswer": "Turn off the engine"
         },
         {
             "id": 5,
@@ -55,7 +55,7 @@ export const questions: QuizData = {
                 "Continue forward cautiously",
                 "Stare at the traffic light"
             ],
-            "correctAnswer": "Stare at the traffic light"
+            "correctAnswer": "Continue forward cautiously"
         },
         {
             "id": 6,
@@ -73,11 +73,11 @@ export const questions: QuizData = {
             "category": "Safety",
             "question": "When approaching an intersection that has a traffic policeman regulating traffic and an active traffic light and fixed traffic sign, you should:",
             "answers": [
-                "Follow the traffic policeman’s instructions",
+                "Follow the traffic policeman s instructions",
                 "Follow the traffic lights",
                 "Heed the fixed traffic sign"
             ],
-            "correctAnswer": "Heed the fixed traffic sign"
+            "correctAnswer": "Follow the traffic policeman s instructions"
         },
         {
             "id": 8,
@@ -88,7 +88,7 @@ export const questions: QuizData = {
                 "Fasten the seat belt, adjust the mirrors, and adjust your seat",
                 "Fasten the seat belt, adjust the seat, and adjust the mirrors"
             ],
-            "correctAnswer": "Fasten the seat belt, adjust the seat, and adjust the mirrors"
+            "correctAnswer": "Adjust the seat, adjust the mirrors, and fasten the seat belt"
         },
         {
             "id": 9,
@@ -99,7 +99,18 @@ export const questions: QuizData = {
                 "Do a routine check of the various vehicle systems",
                 "Should not perform any routine checks as long as the engine is running"
             ],
-            "correctAnswer": "Should not perform any routine checks as long as the engine is running"
+            "correctAnswer": "Do a routine check of the various vehicle systems"
+        },
+        {
+            "id": 10,
+            "category": "Law",
+            "question": "It is okay while driving for the driver to:",
+            "answers": [
+                "Read the newspaper",
+                "Use the phone",
+                "Listen to the radio at a low volume"
+            ],
+            "correctAnswer": "Listen to the radio at a low volume"
         },
         {
             "id": 11,
@@ -121,7 +132,7 @@ export const questions: QuizData = {
                 "To be used as a pillow for sleeping during long trips",
                 "To rest the head during the car trip"
             ],
-            "correctAnswer": "To rest the head during the car trip"
+            "correctAnswer": "To protect the neck in a rear end collision"
         },
         {
             "id": 13,
@@ -132,7 +143,7 @@ export const questions: QuizData = {
                 "Being sleepy and tired",
                 "Driving inside the city"
             ],
-            "correctAnswer": "Driving inside the city"
+            "correctAnswer": "Being sleepy and tired"
         },
         {
             "id": 14,
@@ -143,7 +154,7 @@ export const questions: QuizData = {
                 "Negative way",
                 "Both positive and negative way"
             ],
-            "correctAnswer": "Both positive and negative way"
+            "correctAnswer": "Negative way"
         },
         {
             "id": 15,
@@ -154,7 +165,7 @@ export const questions: QuizData = {
                 "Refrain from driving until the side effects of alcohol have disappeared",
                 "Not to be bothered"
             ],
-            "correctAnswer": "Not to be bothered"
+            "correctAnswer": "Refrain from driving until the side effects of alcohol have disappeared"
         },
         {
             "id": 16,
@@ -165,7 +176,7 @@ export const questions: QuizData = {
                 "Delightful",
                 "Not dangerous"
             ],
-            "correctAnswer": "Not dangerous"
+            "correctAnswer": "Dangerous"
         },
         {
             "id": 17,
@@ -176,7 +187,7 @@ export const questions: QuizData = {
                 "Pull the handbrake up",
                 "Change to a lower gear"
             ],
-            "correctAnswer": "Change to a lower gear"
+            "correctAnswer": "Turn off the engine without locking the steering wheel"
         },
         {
             "id": 18,
@@ -187,7 +198,7 @@ export const questions: QuizData = {
                 "Reduce your speed gradually and pull to the side of the road",
                 "Press firmly on the brakes"
             ],
-            "correctAnswer": "Press firmly on the brakes"
+            "correctAnswer": "Reduce your speed gradually and pull to the side of the road"
         },
         {
             "id": 19,
@@ -198,7 +209,7 @@ export const questions: QuizData = {
                 "A bit later than usual",
                 "With good spirits"
             ],
-            "correctAnswer": "With good spirits"
+            "correctAnswer": "A bit earlier than usual"
         },
         {
             "id": 20,
@@ -209,40 +220,51 @@ export const questions: QuizData = {
                 "Look around and under the vehicle",
                 "Fasten the seatbelt"
             ],
-            "correctAnswer": "Fasten the seatbelt"
+            "correctAnswer": "Look around and under the vehicle"
+        },
+        {
+            "id": 21,
+            "category": "Law",
+            "question": "While driving in heavy traffic, the driver should glance at his mirrors every:",
+            "answers": [
+                "45 seconds",
+                "30 seconds",
+                "4 to 8 seconds"
+            ],
+            "correctAnswer": "4 to 8 seconds"
         },
         {
             "id": 22,
             "category": "Law",
             "question": "Before turning right, the driver should glance at:",
             "answers": [
-                "The left-side mirror only",
-                "The right-side mirror only",
-                "All the mirrors, especially the right-side mirror and blind spots"
+                "The left side mirror only",
+                "The right side mirror only",
+                "All the mirrors, especially the right side mirror and blind spots"
             ],
-            "correctAnswer": "All the mirrors, especially the right-side mirror and blind spots"
+            "correctAnswer": "All the mirrors, especially the right side mirror and blind spots"
         },
         {
             "id": 23,
             "category": "Law",
-            "question": "The biggest threat that vehicles parked on the right-side pavement pose to drivers passing close to them is:",
+            "question": "The biggest threat that vehicles parked on the right side pavement pose to drivers passing close to them is:",
             "answers": [
                 "Pedestrians, and children, appearing suddenly from between these parked vehicles",
                 "Trash being thrown from them towards the passing vehicles",
                 "Loud sounds from the radios of these vehicles"
             ],
-            "correctAnswer": "Loud sounds from the radios of these vehicles"
+            "correctAnswer": "Pedestrians, and children, appearing suddenly from between these parked vehicles"
         },
         {
             "id": 24,
             "category": "Law",
-            "question": "The threat that vehicles parked on the right-side pavement bring to drivers passing close to them is:",
+            "question": "The threat that vehicles parked on the right side pavement bring to drivers passing close to them is:",
             "answers": [
                 "The fact that any of these parked vehicles could take off and join traffic at any time",
                 "The alarm that would go off as the drivers cross next to these vehicles",
                 "The oppening of a car trunk"
             ],
-            "correctAnswer": "The oppening of a car trunk"
+            "correctAnswer": "The fact that any of these parked vehicles could take off and join traffic at any time"
         },
         {
             "id": 25,
@@ -260,11 +282,11 @@ export const questions: QuizData = {
             "category": "Law",
             "question": "While driving and prior to hitting your brakes, you should first look:",
             "answers": [
-                "In the mirrors, namely the rear-view mirror",
+                "In the mirrors, namely the rear view mirror",
                 "To your right",
                 "To your left"
             ],
-            "correctAnswer": "To your left"
+            "correctAnswer": "In the mirrors, namely the rear view mirror"
         },
         {
             "id": 27,
@@ -275,18 +297,29 @@ export const questions: QuizData = {
                 "Would normally make noise and cause the brake pedal to pulsate",
                 "Should not make noise or cause the brake pedal to pulsate"
             ],
-            "correctAnswer": "Should not make noise or cause the brake pedal to pulsate"
+            "correctAnswer": "Would normally make noise and cause the brake pedal to pulsate"
         },
         {
             "id": 28,
             "category": "Law",
             "question": "One of the benefits of ABS in modern vehicles when strong braking is applied, is:",
             "answers": [
-                "Preventing brakes locking-up only",
-                "Not preventing brakes locking-up and not helping the driver maintain steering control of the vehicle",
-                "Preventing brakes from locking-up and allows the driver to maintain steering control of the vehicle"
+                "Preventing brakes locking up only",
+                "Not preventing brakes locking up and not helping the driver maintain steering control of the vehicle",
+                "Preventing brakes from locking up and allows the driver to maintain steering control of the vehicle"
             ],
-            "correctAnswer": "Preventing brakes from locking-up and allows the driver to maintain steering control of the vehicle"
+            "correctAnswer": "Preventing brakes locking up only"
+        },
+        {
+            "id": 29,
+            "category": "Law",
+            "question": "If your vehicle is beginning to",
+            "answers": [
+                "Press on the brakes and steer your vehicle",
+                "in the opposite direction to your vehicles rear",
+                "Get your foot off the accelerator (dont press on the brakes) and steer your vehicle in the same direction"
+            ],
+            "correctAnswer": "Get your foot off the accelerator (dont press on the brakes) and steer your vehicle in the same direction"
         },
         {
             "id": 30,
@@ -297,7 +330,7 @@ export const questions: QuizData = {
                 "Enjoy the view surrounding you",
                 "Read the plate number of that vehicle"
             ],
-            "correctAnswer": "Read the plate number of that vehicle"
+            "correctAnswer": "Avoid a collision with that vehicle should it make a sudden stoop"
         },
         {
             "id": 31,
@@ -319,7 +352,7 @@ export const questions: QuizData = {
                 "Provide right of way",
                 "Stop"
             ],
-            "correctAnswer": "Stop"
+            "correctAnswer": "Provide right of way"
         },
         {
             "id": 33,
@@ -327,7 +360,7 @@ export const questions: QuizData = {
             "question": "The seat belt must be used:",
             "answers": [
                 "Not absolutely necessary",
-                "By front-seat passengers only",
+                "By front seat passengers only",
                 "By all passengers"
             ],
             "correctAnswer": "By all passengers"
@@ -341,7 +374,7 @@ export const questions: QuizData = {
                 "Stop the car immediately in the place your at",
                 "Keep on driving to your destination"
             ],
-            "correctAnswer": "Keep on driving to your destination"
+            "correctAnswer": "Leave the highway from the nearest exit"
         },
         {
             "id": 35,
@@ -352,7 +385,7 @@ export const questions: QuizData = {
                 "With both hands",
                 "With his fingertips"
             ],
-            "correctAnswer": "With his fingertips"
+            "correctAnswer": "With both hands"
         },
         {
             "id": 36,
@@ -363,7 +396,7 @@ export const questions: QuizData = {
                 "The authorized number of passengers",
                 "Are not entitled to transport passengers"
             ],
-            "correctAnswer": "Are not entitled to transport passengers"
+            "correctAnswer": "The authorized number of passengers"
         },
         {
             "id": 37,
@@ -374,7 +407,7 @@ export const questions: QuizData = {
                 "Trailer brake is released and its legs lowered are lowered to the ground",
                 "One leg is lowered to the ground"
             ],
-            "correctAnswer": "One leg is lowered to the ground"
+            "correctAnswer": "Trailer brake is applied and its legs are lowered to the ground"
         },
         {
             "id": 38,
@@ -385,7 +418,18 @@ export const questions: QuizData = {
                 "Air pipes only are connected properly",
                 "Electric lines only are connected properly"
             ],
-            "correctAnswer": "Electric lines only are connected properly"
+            "correctAnswer": "Air pipes and electric lines are connected properly"
+        },
+        {
+            "id": 39,
+            "category": "Law",
+            "question": "When coupling the trailer to the",
+            "answers": [
+                "Reverse slowly above the trailer",
+                "None",
+                "Reverse quickly below the trailer"
+            ],
+            "correctAnswer": "Reverse slowly above the trailer"
         },
         {
             "id": 40,
@@ -396,7 +440,7 @@ export const questions: QuizData = {
                 "With a plane area and soft ground",
                 "With an incline and solid ground"
             ],
-            "correctAnswer": "With an incline and solid ground"
+            "correctAnswer": "With a plane area and soft ground"
         },
         {
             "id": 41,
@@ -407,7 +451,7 @@ export const questions: QuizData = {
                 "Apply the trailer brake and lower its legs to the maximum",
                 "Release the trailer brake and lower its legs to the maximum"
             ],
-            "correctAnswer": "Release the trailer brake and lower its legs to the maximum"
+            "correctAnswer": "Apply the trailer brake and lower its legs to the maximum"
         },
         {
             "id": 42,
@@ -418,7 +462,7 @@ export const questions: QuizData = {
                 "At least eight",
                 "Three"
             ],
-            "correctAnswer": "Three"
+            "correctAnswer": "At least four"
         },
         {
             "id": 43,
@@ -429,7 +473,7 @@ export const questions: QuizData = {
                 "When driving under a bridge or into a tunnel",
                 "When driving on freeways"
             ],
-            "correctAnswer": "When driving on freeways"
+            "correctAnswer": "When driving under a bridge or into a tunnel"
         },
         {
             "id": 44,
@@ -473,7 +517,7 @@ export const questions: QuizData = {
                 "Take the right a bit at the turn",
                 "Increase your speed at the turn"
             ],
-            "correctAnswer": "Increase your speed at the turn"
+            "correctAnswer": "Take the right a bit at the turn"
         },
         {
             "id": 48,
@@ -484,7 +528,18 @@ export const questions: QuizData = {
                 "Take to the right at the turn",
                 "Increase your speed at the turn"
             ],
-            "correctAnswer": "Increase your speed at the turn"
+            "correctAnswer": "Drive in the middle of the lane"
+        },
+        {
+            "id": 49,
+            "category": "Law",
+            "question": "As you approach a hill top, you should always expect behind the peak",
+            "answers": [
+                "A straight stretch of road",
+                "Obstacles",
+                "None"
+            ],
+            "correctAnswer": "Obstacles"
         },
         {
             "id": 50,
@@ -502,11 +557,11 @@ export const questions: QuizData = {
             "category": "Law",
             "question": "Using the main brakes of your heavy vehicle continuously when driving downhill for long disables the brakes due of:",
             "answers": [
-                "Heat build-up",
+                "Heat build up",
                 "Break oil pressure",
                 "Slope steepness"
             ],
-            "correctAnswer": "Slope steepness"
+            "correctAnswer": "Heat build up"
         },
         {
             "id": 52,
@@ -517,18 +572,18 @@ export const questions: QuizData = {
                 "It will be impossible to change to a lower gear to have more control over the vehicle",
                 "The driver will be able to overtake other vehicles safely"
             ],
-            "correctAnswer": "The driver will be able to overtake other vehicles safely"
+            "correctAnswer": "It will be impossible to change to a lower gear to have more control over the vehicle"
         },
         {
             "id": 53,
             "category": "Law",
             "question": "As you drive your heavy vehicle uphill for a long period of time, you should:",
             "answers": [
-                "Avoid engine pressure build-up",
+                "Avoid engine pressure build up",
                 "Stick to driving on the left",
                 "Prevent smaller vehicles from overtaking you"
             ],
-            "correctAnswer": "Prevent smaller vehicles from overtaking you"
+            "correctAnswer": "Avoid engine pressure build up"
         },
         {
             "id": 54,
@@ -539,7 +594,7 @@ export const questions: QuizData = {
                 "Keep to the extreme right as much as possible",
                 "Keep to the extreme left as much as possible"
             ],
-            "correctAnswer": "Keep to the extreme left as much as possible"
+            "correctAnswer": "Keep to the extreme right as much as possible"
         },
         {
             "id": 55,
@@ -555,7 +610,7 @@ export const questions: QuizData = {
         {
             "id": 56,
             "category": "Law",
-            "question": "When you are about to drive your heavy vehicle off-road, you should:",
+            "question": "When you are about to drive your heavy vehicle off road, you should:",
             "answers": [
                 "You should keep an eye on the driver behind you",
                 "Increase your speed a little",
@@ -572,7 +627,7 @@ export const questions: QuizData = {
                 "Helps drivers avoid misunderstandings",
                 "Is a sort of alert"
             ],
-            "correctAnswer": "Is a sort of alert"
+            "correctAnswer": "Helps drivers avoid misunderstandings"
         },
         {
             "id": 58,
@@ -583,7 +638,7 @@ export const questions: QuizData = {
                 "Slowing down gradually",
                 "Washing his vehicle frequently"
             ],
-            "correctAnswer": "Washing his vehicle frequently"
+            "correctAnswer": "Reversing"
         },
         {
             "id": 59,
@@ -594,18 +649,29 @@ export const questions: QuizData = {
                 "For women drivers",
                 "Speeding vehicle"
             ],
-            "correctAnswer": "Speeding vehicle"
+            "correctAnswer": "Bus Schools flashing their hazard lights"
+        },
+        {
+            "id": 60,
+            "category": "Safety",
+            "question": "By law, the driver should yield the right of way to:",
+            "answers": [
+                "Vehicles that are already in the roundabout",
+                "Vehicles that are entering a roundabout",
+                "Vehicles located to the right of the vehicle"
+            ],
+            "correctAnswer": "Vehicles that are already in the roundabout"
         },
         {
             "id": 61,
             "category": "Safety",
-            "question": "It is legal to parallel park a vehicle to the pavement on a single-lane two-way street:",
+            "question": "It is legal to parallel park a vehicle to the pavement on a single lane two way street:",
             "answers": [
                 "To the right of the direction of driving for the vehicle",
                 "Doesnt matter as long as it doesnt hinder traffic",
                 "To the left of the road"
             ],
-            "correctAnswer": "To the left of the road"
+            "correctAnswer": "To the right of the direction of driving for the vehicle"
         },
         {
             "id": 62,
@@ -616,7 +682,7 @@ export const questions: QuizData = {
                 "Will impair the drivers ability to react properly and make the right decisions",
                 "Will allow the driver to maintain control of his vehicle while driving at very high speeds"
             ],
-            "correctAnswer": "Will allow the driver to maintain control of his vehicle while driving at very high speeds"
+            "correctAnswer": "Will impair the drivers ability to react properly and make the right decisions"
         },
         {
             "id": 63,
@@ -627,7 +693,7 @@ export const questions: QuizData = {
                 "Slows down his reactions during driving and causes him a slight loss of memory",
                 "Helps him to be alert"
             ],
-            "correctAnswer": "Helps him to be alert"
+            "correctAnswer": "Slows down his reactions during driving and causes him a slight loss of memory"
         },
         {
             "id": 64,
@@ -638,7 +704,7 @@ export const questions: QuizData = {
                 "10 hours",
                 "8 hours"
             ],
-            "correctAnswer": "8 hours"
+            "correctAnswer": "4 hours"
         },
         {
             "id": 65,
@@ -656,11 +722,11 @@ export const questions: QuizData = {
             "category": "Law",
             "question": "Driving under the influence of alcohol:",
             "answers": [
-                "Endangers driver’s life as well as the lives of others",
+                "Endangers driver s life as well as the lives of others",
                 "Endangers others lives only",
                 "Endangers the driver"
             ],
-            "correctAnswer": "Endangers the driver"
+            "correctAnswer": "Endangers driver s life as well as the lives of others"
         },
         {
             "id": 67,
@@ -682,7 +748,7 @@ export const questions: QuizData = {
                 "Check with his physician",
                 "Test it on another driver"
             ],
-            "correctAnswer": "Test it on another driver"
+            "correctAnswer": "Check with his physician"
         },
         {
             "id": 69,
@@ -693,7 +759,18 @@ export const questions: QuizData = {
                 "Courage and boldness",
                 "Outrage"
             ],
-            "correctAnswer": "Outrage"
+            "correctAnswer": "Courage and boldness"
+        },
+        {
+            "id": 70,
+            "category": "Law",
+            "question": "When you are about to overtake",
+            "answers": [
+                "Rely on that vehicle light signals",
+                "None",
+                "Never depend on that vehicle s driver hand gestures"
+            ],
+            "correctAnswer": "Never depend on that vehicle s driver hand gestures"
         },
         {
             "id": 71,
@@ -704,7 +781,7 @@ export const questions: QuizData = {
                 "Stops for some rest",
                 "Loads his cargo"
             ],
-            "correctAnswer": "Loads his cargo"
+            "correctAnswer": "Enters narrow places"
         },
         {
             "id": 72,
@@ -715,7 +792,7 @@ export const questions: QuizData = {
                 "From a rear view camera",
                 "From mirrors"
             ],
-            "correctAnswer": "From mirrors"
+            "correctAnswer": "From driving assistant"
         },
         {
             "id": 73,
@@ -726,7 +803,7 @@ export const questions: QuizData = {
                 "All the lids and release valves are securely fastened",
                 "Some of the lids are securely fastened"
             ],
-            "correctAnswer": "Some of the lids are securely fastened"
+            "correctAnswer": "All the lids and release valves are securely fastened"
         },
         {
             "id": 74,
@@ -737,7 +814,7 @@ export const questions: QuizData = {
                 "Driving the motorcycle on one wheel",
                 "Ensure that there is insurance on the motorcycle"
             ],
-            "correctAnswer": "Ensure that there is insurance on the motorcycle"
+            "correctAnswer": "Wearing motorcycle protective gear"
         },
         {
             "id": 75,
@@ -748,7 +825,7 @@ export const questions: QuizData = {
                 "Fire",
                 "Driving fast and straddling lanes"
             ],
-            "correctAnswer": "Driving fast and straddling lanes"
+            "correctAnswer": "Friction with asphalt and small stones"
         },
         {
             "id": 76,
@@ -759,7 +836,7 @@ export const questions: QuizData = {
                 "The body from cold",
                 "Better control of steering in slopes"
             ],
-            "correctAnswer": "Better control of steering in slopes"
+            "correctAnswer": "The hands from cold and injuries"
         },
         {
             "id": 77,
@@ -792,7 +869,7 @@ export const questions: QuizData = {
                 "Eyes from rain, wind sand, and insects",
                 "Eyes from crying"
             ],
-            "correctAnswer": "Eyes from crying"
+            "correctAnswer": "Eyes from rain, wind sand, and insects"
         },
         {
             "id": 80,
@@ -814,7 +891,18 @@ export const questions: QuizData = {
                 "Is illegal",
                 "Is legal"
             ],
-            "correctAnswer": "Is legal"
+            "correctAnswer": "Is illegal"
+        },
+        {
+            "id": 82,
+            "category": "Safety",
+            "question": "If the motorcyclist just carries the helmet but does not wear it while driving, the behavior:",
+            "answers": [
+                "Give the motorcyclist legal protection",
+                "Does not give the motorcyclist legal protection",
+                "Is wise"
+            ],
+            "correctAnswer": "Does not give the motorcyclist legal protection"
         },
         {
             "id": 83,
@@ -825,7 +913,7 @@ export const questions: QuizData = {
                 "A fluorescent suit",
                 "A sports outfit"
             ],
-            "correctAnswer": "A sports outfit"
+            "correctAnswer": "A fluorescent suit"
         },
         {
             "id": 84,
@@ -836,7 +924,7 @@ export const questions: QuizData = {
                 "Turn off his lights and attach luminous stripes",
                 "Make squeaking noise with his brakes"
             ],
-            "correctAnswer": "Make squeaking noise with his brakes"
+            "correctAnswer": "Attach luminous stripes"
         },
         {
             "id": 85,
@@ -847,7 +935,7 @@ export const questions: QuizData = {
                 "Limit the use of brakes",
                 "Check the level of brake line"
             ],
-            "correctAnswer": "Check the level of brake line"
+            "correctAnswer": "Check the level of brake fluid"
         },
         {
             "id": 86,
@@ -858,7 +946,7 @@ export const questions: QuizData = {
                 "3 millimeters",
                 "6 millimeters"
             ],
-            "correctAnswer": "6 millimeters"
+            "correctAnswer": "3 millimeters"
         },
         {
             "id": 87,
@@ -869,7 +957,7 @@ export const questions: QuizData = {
                 "Sit close to the steering grips",
                 "Hold the steering grips with one hand"
             ],
-            "correctAnswer": "Hold the steering grips with one hand"
+            "correctAnswer": "Sit close to the steering grips"
         },
         {
             "id": 88,
@@ -880,7 +968,7 @@ export const questions: QuizData = {
                 "Right wrist is upwards",
                 "Left wrist is upwards"
             ],
-            "correctAnswer": "Left wrist is upwards"
+            "correctAnswer": "Right wrist is downwards"
         },
         {
             "id": 89,
@@ -902,7 +990,7 @@ export const questions: QuizData = {
                 "In a straight direction",
                 "At an intersection"
             ],
-            "correctAnswer": "At an intersection"
+            "correctAnswer": "In a straight direction"
         },
         {
             "id": 91,
@@ -913,7 +1001,7 @@ export const questions: QuizData = {
                 "Slippery road and nervous reaction",
                 "Broken lights and weak battery"
             ],
-            "correctAnswer": "Broken lights and weak battery"
+            "correctAnswer": "Slippery road and nervous reaction"
         },
         {
             "id": 92,
@@ -924,7 +1012,18 @@ export const questions: QuizData = {
                 "Fast, with your low beam on",
                 "Slowly and maintain a shorter stopping distance"
             ],
-            "correctAnswer": "Slowly and maintain a shorter stopping distance"
+            "correctAnswer": "Slowly and maintain a longer stopping distance"
+        },
+        {
+            "id": 93,
+            "category": "Law",
+            "question": "When the motorcycle vibrates in",
+            "answers": [
+                "Uneven rotation of a least one wheel or",
+                "one tire",
+                "Even rotation of both wheels and both tires"
+            ],
+            "correctAnswer": "Uneven rotation of a least one wheel or"
         },
         {
             "id": 94,
@@ -935,7 +1034,7 @@ export const questions: QuizData = {
                 "Inappropriate speed",
                 "Policemen and traffic lights"
             ],
-            "correctAnswer": "Policemen and traffic lights"
+            "correctAnswer": "Inappropriate speed"
         },
         {
             "id": 95,
@@ -946,7 +1045,7 @@ export const questions: QuizData = {
                 "Depend on your mirrors",
                 "Overtake from the right of the vehicles stoped at the intersection"
             ],
-            "correctAnswer": "Overtake from the right of the vehicles stoped at the intersection"
+            "correctAnswer": "Slow down and move to the appropriate lane"
         },
         {
             "id": 96,
@@ -979,7 +1078,7 @@ export const questions: QuizData = {
                 "Stop suddenly on its path",
                 "Swerve suddenly away from your path"
             ],
-            "correctAnswer": "Swerve suddenly away from your path"
+            "correctAnswer": "Swerve suddenly into your path"
         },
         {
             "id": 99,
@@ -990,7 +1089,7 @@ export const questions: QuizData = {
                 "Your chances of being involved in an accident are much lower",
                 "You are a world champion"
             ],
-            "correctAnswer": "You are a world champion"
+            "correctAnswer": "Your chances of being involved in an accident are much higher"
         },
         {
             "id": 100,
@@ -1001,34 +1100,34 @@ export const questions: QuizData = {
                 "Is considered a clear traffic violation",
                 "Is legal"
             ],
-            "correctAnswer": "Is legal"
+            "correctAnswer": "Is considered a clear traffic violation"
         },
         {
             "id": 101,
             "category": "Law",
-            "question": "What are the environmental benefits of eco-friendly driving? (select all that apply)",
+            "question": "What are the environmental benefits of eco friendly driving? (select all that apply)",
             "answers": [
                 "Reduction in local air pollutant levels",
                 "Increase of greenhouse gas emissions (CO2)",
                 "Reduction in road traffic"
             ],
-            "correctAnswer": "Reduction in road traffic"
+            "correctAnswer": "Reduction in local air pollutant levels"
         },
         {
             "id": 102,
             "category": "Law",
-            "question": "Whatare the savings benefits of eco-driving? (select all that apply)",
+            "question": "Whatare the savings benefits of eco driving? (select all that apply)",
             "answers": [
                 "Lower insurance cost",
                 "Lower vehicle maintenance costs",
-                "Savings up to 50% in fuel and money"
+                "Savings up to 50  in fuel and money"
             ],
-            "correctAnswer": "Savings up to 50% in fuel and money"
+            "correctAnswer": "Lower vehicle maintenance costs"
         },
         {
             "id": 103,
             "category": "Law",
-            "question": "How does eco-friendly driving maintain the safety of the driver?",
+            "question": "How does eco friendly driving maintain the safety of the driver?",
             "answers": [
                 "Improves road safety",
                 "Improves driving skills",
@@ -1037,26 +1136,26 @@ export const questions: QuizData = {
             "correctAnswer": "All of the above"
         },
         {
-            "id": 105,
+            "id": 104,
             "category": "Law",
-            "question": "What instrument should be used to monitor your speed on high- ways?",
+            "question": "What are the social responsibility benefits of eco driving?",
             "answers": [
-                "Sudden braking",
-                "Cruise control",
-                "Braking and accelerating constantly"
+                "Avoids stress while driving",
+                "Increases comfort for drivers and passengers",
+                "Sudden braking"
             ],
-            "correctAnswer": "Braking and accelerating constantly"
+            "correctAnswer": "Avoids stress while driving"
         },
         {
             "id": 106,
             "category": "Law",
-            "question": "What is the optimal speed range for eco-friendly driving?",
+            "question": "What is the optimal speed range for eco friendly driving?",
             "answers": [
-                "80 km/h –100 km/h",
-                "50 km/h - 80 km/h",
-                "40 km/h –50 km/h"
+                "80 km/h   100 km/h",
+                "50 km/h   80 km/h",
+                "40 km/h   50 km/h"
             ],
-            "correctAnswer": "40 km/h –50 km/h"
+            "correctAnswer": "50 km/h   80 km/h"
         },
         {
             "id": 107,
@@ -1067,7 +1166,7 @@ export const questions: QuizData = {
                 "4000 RPM",
                 "3000 RPM"
             ],
-            "correctAnswer": "3000 RPM"
+            "correctAnswer": "2000 RPM"
         },
         {
             "id": 108,
@@ -1096,27 +1195,27 @@ export const questions: QuizData = {
             "category": "Law",
             "question": "By how much is fuel consumption reduced when you change the oil and oil filterd regularly?",
             "answers": [
-                "1% to 2%",
-                "1% to 3%",
-                "2% to 3%"
+                "1  to 2 ",
+                "1  to 3 ",
+                "2  to 3 "
             ],
-            "correctAnswer": "2% to 3%"
+            "correctAnswer": "1  to 2 "
         },
         {
             "id": 111,
             "category": "Law",
             "question": "Which type of oil is best for the environment?",
             "answers": [
-                "Energy-conserving oil which has additives that reduce friction",
-                "Energy-conserving oil which has additives that increase friction",
-                "Energy-conserving oil which has additives that eliminate friction"
+                "Energy conserving oil which has additives that reduce friction",
+                "Energy conserving oil which has additives that increase friction",
+                "Energy conserving oil which has additives that eliminate friction"
             ],
-            "correctAnswer": "Energy-conserving oil which has additives that eliminate friction"
+            "correctAnswer": "Energy conserving oil which has additives that reduce friction"
         },
         {
             "id": 112,
             "category": "Law",
-            "question": "How do you ensure long-lasitng tyres?",
+            "question": "How do you ensure long lasitng tyres?",
             "answers": [
                 "Check tire pressure at least once a year to preserve a low rolling resistance",
                 "Change the tires each year",
@@ -1130,10 +1229,10 @@ export const questions: QuizData = {
             "question": "What is the benefit of cleaning your air filters regularly?",
             "answers": [
                 "All of the above",
-                "Improved engine performance by 6 to 11%",
+                "Improved engine performance by 6 to 11 ",
                 "Reduce air pollution"
             ],
-            "correctAnswer": "Reduce air pollution"
+            "correctAnswer": "All of the above"
         },
         {
             "id": 114,
@@ -1144,7 +1243,18 @@ export const questions: QuizData = {
                 "Put it on neutral",
                 "Do nothing"
             ],
-            "correctAnswer": "Do nothing"
+            "correctAnswer": "Turn it off"
+        },
+        {
+            "id": 115,
+            "category": "Law",
+            "question": "How do you enhance the performance of your engine and reduce emission levels?",
+            "answers": [
+                "Change the engine s water regularly",
+                "Use clean fuel that complies with international standards",
+                "Buy a new engine"
+            ],
+            "correctAnswer": "Use clean fuel that complies with international standards"
         },
         {
             "id": 116,
@@ -1155,7 +1265,7 @@ export const questions: QuizData = {
                 "Fuel tank cap is open",
                 "Car temperature is stable"
             ],
-            "correctAnswer": "Car temperature is stable"
+            "correctAnswer": "Fuel tank cap is securely closed"
         },
         {
             "id": 117,
@@ -1177,7 +1287,7 @@ export const questions: QuizData = {
                 "0.3",
                 "0.2"
             ],
-            "correctAnswer": "0.2"
+            "correctAnswer": "0.1"
         },
         {
             "id": 119,
@@ -1188,18 +1298,18 @@ export const questions: QuizData = {
                 "Traveling Light",
                 "Driving at random speed"
             ],
-            "correctAnswer": "Driving at random speed"
+            "correctAnswer": "Traveling Light"
         },
         {
             "id": 120,
             "category": "Law",
-            "question": "What is eco-friendly driving?",
+            "question": "What is eco friendly driving?",
             "answers": [
-                "Eco-Friendly Driving is the efficient use of lighting in driving through a simple method and smart water consumption",
-                "Eco-Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help cut fuel consumption and reduce air pollution from land transportation.",
-                "Eco-Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help increase fuel consumption and air pollution from land transportation."
+                "Eco Friendly Driving is the efficient use of lighting in driving through a simple method and smart water consumption",
+                "Eco Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help cut fuel consumption and reduce air pollution from land transportation.",
+                "Eco Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help increase fuel consumption and air pollution from land transportation."
             ],
-            "correctAnswer": "Eco-Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help increase fuel consumption and air pollution from land transportation."
+            "correctAnswer": "Eco Friendly Driving is the efficient use of fuel in road transportation through easy, smart, and socially responsible driving practices that help cut fuel consumption and reduce air pollution from land transportation."
         },
         {
             "id": 121,
@@ -1210,7 +1320,7 @@ export const questions: QuizData = {
                 "Caution, slippery road ahead",
                 "Caution, speed bumps ahead"
             ],
-            "correctAnswer": "Caution, speed bumps ahead"
+            "correctAnswer": "Caution, uneven road ahead"
         },
         {
             "id": 122,
@@ -1232,7 +1342,18 @@ export const questions: QuizData = {
                 "Caution, right bend ahead",
                 "Vehicles can go left"
             ],
-            "correctAnswer": "Vehicles can go left"
+            "correctAnswer": "Caution, left bend ahead"
+        },
+        {
+            "id": 124,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Caution, double lane road",
+                "Caution, double bend ahead, first one to the left",
+                "Caution, double bend ahead, first one to the right"
+            ],
+            "correctAnswer": "Caution, double bend ahead, first one to the right"
         },
         {
             "id": 125,
@@ -1243,7 +1364,7 @@ export const questions: QuizData = {
                 "Caution, double bend ahead, first one to the left",
                 "Caution, double bend ahead, first one to the right"
             ],
-            "correctAnswer": "Caution, double bend ahead, first one to the right"
+            "correctAnswer": "Caution, double bend ahead, first one to the left"
         },
         {
             "id": 126,
@@ -1276,7 +1397,7 @@ export const questions: QuizData = {
                 "Stray animals",
                 "Animals not allowed"
             ],
-            "correctAnswer": "Animals not allowed"
+            "correctAnswer": "Caution, animals"
         },
         {
             "id": 129,
@@ -1287,7 +1408,7 @@ export const questions: QuizData = {
                 "Caution, intersetion without right of way",
                 "Travel on the right side of the road"
             ],
-            "correctAnswer": "Travel on the right side of the road"
+            "correctAnswer": "Caution, double lane road"
         },
         {
             "id": 130,
@@ -1309,7 +1430,7 @@ export const questions: QuizData = {
                 "Caution, intersection with no right of way",
                 "Caution, vehicles coming from the opposite direction have the right of way"
             ],
-            "correctAnswer": "Caution, vehicles coming from the opposite direction have the right of way"
+            "correctAnswer": "Caution, intersection ahead"
         },
         {
             "id": 132,
@@ -1320,7 +1441,7 @@ export const questions: QuizData = {
                 "Merging with a freeway",
                 "Caution, intersection with no right of way"
             ],
-            "correctAnswer": "Caution, intersection with no right of way"
+            "correctAnswer": "Caution, vehicles coming from the opposite direction have the right of way"
         },
         {
             "id": 133,
@@ -1331,7 +1452,18 @@ export const questions: QuizData = {
                 "Caution, intersection with no right of way",
                 "Caution, vehicles coming from the opposite direction have the right of way"
             ],
-            "correctAnswer": "Caution, vehicles coming from the opposite direction have the right of way"
+            "correctAnswer": "Caution, intersection with no right of way"
+        },
+        {
+            "id": 134,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Road with priority right of way",
+                "End of speed limit",
+                "One minute parking"
+            ],
+            "correctAnswer": "Road with priority right of way"
         },
         {
             "id": 135,
@@ -1342,7 +1474,7 @@ export const questions: QuizData = {
                 "Caution, pedestrian crossing",
                 "Not reserved for pedestrians"
             ],
-            "correctAnswer": "Not reserved for pedestrians"
+            "correctAnswer": "Caution, pedestrian crossing"
         },
         {
             "id": 136,
@@ -1397,7 +1529,7 @@ export const questions: QuizData = {
                 "Caution, falling or fallen rocks ahead",
                 "Mountainous area"
             ],
-            "correctAnswer": "Mountainous area"
+            "correctAnswer": "Caution, falling or fallen rocks ahead"
         },
         {
             "id": 141,
@@ -1408,7 +1540,7 @@ export const questions: QuizData = {
                 "Caution, electrical signs",
                 "Caution, roundabout ahead"
             ],
-            "correctAnswer": "Caution, roundabout ahead"
+            "correctAnswer": "Caution, electrical signs"
         },
         {
             "id": 142,
@@ -1416,7 +1548,7 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "No entry",
-                "Give way -priority road ahead",
+                "Give way   priority road ahead",
                 "Caution, various dangers"
             ],
             "correctAnswer": "Caution, various dangers"
@@ -1427,10 +1559,21 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "No entry",
-                "Give way - priority road ahead",
+                "Give way   priority road ahead",
                 "Caution, various dangers"
             ],
-            "correctAnswer": "Caution, various dangers"
+            "correctAnswer": "Give way   priority road ahead"
+        },
+        {
+            "id": 144,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "No entry",
+                "End of priority",
+                "Caution, vehicles coming from the opposite"
+            ],
+            "correctAnswer": "End of priority"
         },
         {
             "id": 145,
@@ -1463,7 +1606,7 @@ export const questions: QuizData = {
                 "One Lane road",
                 "No parking"
             ],
-            "correctAnswer": "No parking"
+            "correctAnswer": "No entry for all motor vehicles"
         },
         {
             "id": 148,
@@ -1474,7 +1617,7 @@ export const questions: QuizData = {
                 "Various dangers",
                 "No parking"
             ],
-            "correctAnswer": "No parking"
+            "correctAnswer": "No entry"
         },
         {
             "id": 149,
@@ -1485,7 +1628,7 @@ export const questions: QuizData = {
                 "No overtaking allowed for all kinds of vehicles",
                 "No entry"
             ],
-            "correctAnswer": "No entry"
+            "correctAnswer": "No overtaking allowed for all kinds of vehicles"
         },
         {
             "id": 150,
@@ -1493,7 +1636,7 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "Lower Speed limit: 80 km/hour",
-                "Give way - priority road ahead",
+                "Give way   priority road ahead",
                 "Upper speed limit: 30 km/hour"
             ],
             "correctAnswer": "Upper speed limit: 30 km/hour"
@@ -1543,6 +1686,17 @@ export const questions: QuizData = {
             "correctAnswer": "No entry for pedestrians"
         },
         {
+            "id": 155,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "No entry for bikes",
+                "Compulsory path for motor vehicles",
+                "Lane reserved for bikes"
+            ],
+            "correctAnswer": "No entry for bikes"
+        },
+        {
             "id": 156,
             "category": "Signs",
             "question": "",
@@ -1551,7 +1705,7 @@ export const questions: QuizData = {
                 "Cycles crossing",
                 "Motorbikes Lane"
             ],
-            "correctAnswer": "Motorbikes Lane"
+            "correctAnswer": "No entry for motorbikes"
         },
         {
             "id": 157,
@@ -1606,7 +1760,7 @@ export const questions: QuizData = {
                 "No entry to trucks exceeding 10m in height",
                 "No entry to trucks carrying more than 6.5 tons of cargo"
             ],
-            "correctAnswer": "No entry to trucks carrying more than 6.5 tons of cargo"
+            "correctAnswer": "No entry to trucks exceeding 10m in height"
         },
         {
             "id": 162,
@@ -1628,7 +1782,7 @@ export const questions: QuizData = {
                 "Start of restriction signs",
                 "No speeding"
             ],
-            "correctAnswer": "No speeding"
+            "correctAnswer": "End of restriction sign"
         },
         {
             "id": 164,
@@ -1639,7 +1793,18 @@ export const questions: QuizData = {
                 "Speed limit",
                 "Start of speed limit"
             ],
-            "correctAnswer": "Start of speed limit"
+            "correctAnswer": "End of speed limit"
+        },
+        {
+            "id": 165,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Compulsory direction to the left",
+                "You cannot turn right",
+                "Turn right"
+            ],
+            "correctAnswer": "Turn right"
         },
         {
             "id": 166,
@@ -1650,7 +1815,7 @@ export const questions: QuizData = {
                 "Turn left",
                 "You can go straight or turn right"
             ],
-            "correctAnswer": "You can go straight or turn right"
+            "correctAnswer": "Turn left"
         },
         {
             "id": 167,
@@ -1716,7 +1881,7 @@ export const questions: QuizData = {
                 "Compulsory direction to the right or the left",
                 "You cannot turn right or left"
             ],
-            "correctAnswer": "You cannot turn right or left"
+            "correctAnswer": "Vehicle can only turn right"
         },
         {
             "id": 173,
@@ -1738,7 +1903,18 @@ export const questions: QuizData = {
                 "End of bicycle track",
                 "No entry for pedestrians and bicycles"
             ],
-            "correctAnswer": "No entry for pedestrians and bicycles"
+            "correctAnswer": "Lane reserved for pedestrians and bicycles"
+        },
+        {
+            "id": 175,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Traffic direction",
+                "You cannot turn right",
+                "None"
+            ],
+            "correctAnswer": "You cannot turn right"
         },
         {
             "id": 176,
@@ -1782,7 +1958,7 @@ export const questions: QuizData = {
                 "Compulsory direction for trucks",
                 "Trucks cannot park here"
             ],
-            "correctAnswer": "Trucks cannot park here"
+            "correctAnswer": "No entry to trucks carrying more than 6.5 tons of cargo"
         },
         {
             "id": 180,
@@ -1793,14 +1969,14 @@ export const questions: QuizData = {
                 "Compulsory direction for trucks",
                 "No entry for trucks carrying Hazardous Material"
             ],
-            "correctAnswer": "No entry for trucks carrying Hazardous Material"
+            "correctAnswer": "Not entry to trailer trucks"
         },
         {
             "id": 181,
             "category": "Signs",
             "question": "",
             "answers": [
-                "One-minute parking for agricultural machinery",
+                "One minute parking for agricultural machinery",
                 "Road reserved for agricultural machinery",
                 "Agricultural machinery not allowed"
             ],
@@ -1811,11 +1987,11 @@ export const questions: QuizData = {
             "category": "Signs",
             "question": "",
             "answers": [
-                "Caution, two-lane road",
+                "Caution, two lane road",
                 "End of no overtaking zone",
                 "End of no overtaking for trucks"
             ],
-            "correctAnswer": "End of no overtaking for trucks"
+            "correctAnswer": "End of no overtaking zone"
         },
         {
             "id": 183,
@@ -1826,7 +2002,7 @@ export const questions: QuizData = {
                 "Caution, two lane road",
                 "Trucks only"
             ],
-            "correctAnswer": "Trucks only"
+            "correctAnswer": "End of no overtaking for trucks"
         },
         {
             "id": 184,
@@ -1837,7 +2013,18 @@ export const questions: QuizData = {
                 "No overtaking for all kinds of vehicles",
                 "No entry"
             ],
-            "correctAnswer": "No entry"
+            "correctAnswer": "No parking"
+        },
+        {
+            "id": 185,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "No stopping and no parking",
+                "No parking",
+                "None"
+            ],
+            "correctAnswer": "No stopping and no parking"
         },
         {
             "id": 186,
@@ -1859,7 +2046,7 @@ export const questions: QuizData = {
                 "No parking on the left",
                 "You cannot turn left"
             ],
-            "correctAnswer": "You cannot turn left"
+            "correctAnswer": "Direction to the left"
         },
         {
             "id": 188,
@@ -1870,7 +2057,7 @@ export const questions: QuizData = {
                 "No parking on the right",
                 "You cannot turn right"
             ],
-            "correctAnswer": "You cannot turn right"
+            "correctAnswer": "Direction to the right"
         },
         {
             "id": 189,
@@ -1881,7 +2068,7 @@ export const questions: QuizData = {
                 "Roundabout ahead",
                 "You cannot turn"
             ],
-            "correctAnswer": "You cannot turn"
+            "correctAnswer": "Roundabout ahead"
         },
         {
             "id": 190,
@@ -1947,7 +2134,18 @@ export const questions: QuizData = {
                 "No parking for bicycles",
                 "No entry for bicycles"
             ],
-            "correctAnswer": "No entry for bicycles"
+            "correctAnswer": "Bicycles track"
+        },
+        {
+            "id": 196,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Cannot turn left",
+                "Compulsory direction to the left",
+                "No parking on the left"
+            ],
+            "correctAnswer": "Cannot turn left"
         },
         {
             "id": 197,
@@ -1955,7 +2153,7 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "Caution, moving bridge ahead",
-                "Two- lane road connected to a bridge",
+                "Two  lane road connected to a bridge",
                 "Hospital"
             ],
             "correctAnswer": "Hospital"
@@ -1969,7 +2167,7 @@ export const questions: QuizData = {
                 "End of pedestrian lane",
                 "Caution, no entry to pedestrians"
             ],
-            "correctAnswer": "Caution, no entry to pedestrians"
+            "correctAnswer": "Caution, pedestrian crossing"
         },
         {
             "id": 199,
@@ -1980,7 +2178,7 @@ export const questions: QuizData = {
                 "Bicycle track",
                 "No entry for bicycles"
             ],
-            "correctAnswer": "No entry for bicycles"
+            "correctAnswer": "Lane reseved for bikes"
         },
         {
             "id": 200,
@@ -2013,7 +2211,7 @@ export const questions: QuizData = {
                 "End of freeway",
                 "Caution, narrow road ahead"
             ],
-            "correctAnswer": "Caution, narrow road ahead"
+            "correctAnswer": "End of freeway"
         },
         {
             "id": 203,
@@ -2035,7 +2233,7 @@ export const questions: QuizData = {
                 "Parking for the disabled",
                 "For doctors only"
             ],
-            "correctAnswer": "For doctors only"
+            "correctAnswer": "Help center"
         },
         {
             "id": 205,
@@ -2043,7 +2241,7 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "No parking for the disabled",
-                "One-minute parking",
+                "One minute parking",
                 "Parking reserved for the disabled"
             ],
             "correctAnswer": "Parking reserved for the disabled"
@@ -2054,10 +2252,21 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "Parking",
-                "One-minute parking",
+                "One minute parking",
                 "Parking not allowed"
             ],
-            "correctAnswer": "Parking not allowed"
+            "correctAnswer": "One minute parking"
+        },
+        {
+            "id": 207,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Parking for all   not more than two taxi cars allowed",
+                "Taxis not allowed to park here",
+                "Taxi stop"
+            ],
+            "correctAnswer": "Taxi stop"
         },
         {
             "id": 208,
@@ -2101,7 +2310,7 @@ export const questions: QuizData = {
                 "Dangerous interesection ahead",
                 "Indirect turn to the left"
             ],
-            "correctAnswer": "Indirect turn to the left"
+            "correctAnswer": "Freeway"
         },
         {
             "id": 212,
@@ -2110,9 +2319,9 @@ export const questions: QuizData = {
             "answers": [
                 "No parking",
                 "Parking",
-                "One-minute parking"
+                "One minute parking"
             ],
-            "correctAnswer": "One-minute parking"
+            "correctAnswer": "Parking"
         },
         {
             "id": 213,
@@ -2134,7 +2343,7 @@ export const questions: QuizData = {
                 "Restaurant",
                 "Refreshments"
             ],
-            "correctAnswer": "Refreshments"
+            "correctAnswer": "Restaurant"
         },
         {
             "id": 215,
@@ -2145,7 +2354,7 @@ export const questions: QuizData = {
                 "Restaurant",
                 "Petrol station"
             ],
-            "correctAnswer": "Petrol station"
+            "correctAnswer": "Public phone"
         },
         {
             "id": 216,
@@ -2156,7 +2365,7 @@ export const questions: QuizData = {
                 "Repair Center",
                 "Restaurant"
             ],
-            "correctAnswer": "Restaurant"
+            "correctAnswer": "Petrol station"
         },
         {
             "id": 217,
@@ -2170,6 +2379,17 @@ export const questions: QuizData = {
             "correctAnswer": "Bus parking"
         },
         {
+            "id": 218,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Help Center",
+                "Camping   camping cars zone",
+                "No parking"
+            ],
+            "correctAnswer": "Camping   camping cars zone"
+        },
+        {
             "id": 219,
             "category": "Signs",
             "question": "",
@@ -2178,7 +2398,7 @@ export const questions: QuizData = {
                 "Reduce Speed",
                 "Indirect bend to the left"
             ],
-            "correctAnswer": "Indirect bend to the left"
+            "correctAnswer": "Bend ahead"
         },
         {
             "id": 220,
@@ -2200,7 +2420,7 @@ export const questions: QuizData = {
                 "Caution, road Bumps ahead",
                 "Caution, uneven roads ahead"
             ],
-            "correctAnswer": "Caution, uneven roads ahead"
+            "correctAnswer": "Caution, road Bumps ahead"
         },
         {
             "id": 222,
@@ -2244,7 +2464,7 @@ export const questions: QuizData = {
                 "To be used by pedestrians, children trolleys, the sick , and the disabled",
                 "To put anything that obstructs the use of the pavement"
             ],
-            "correctAnswer": "To put anything that obstructs the use of the pavement"
+            "correctAnswer": "To be used by pedestrians, children trolleys, the sick , and the disabled"
         },
         {
             "id": 226,
@@ -2266,7 +2486,18 @@ export const questions: QuizData = {
                 "If the driver needs to stop the car",
                 "If the driver needs to test the brakes"
             ],
-            "correctAnswer": "If the driver needs to test the brakes"
+            "correctAnswer": "In case of danger"
+        },
+        {
+            "id": 228,
+            "category": "Safety",
+            "question": "The driver should keep to:",
+            "answers": [
+                "The right, when another vehicle is heading towards him way from the opposite direction",
+                "The left, when another driver is overtaking him",
+                "The left, when another vehicle is heading towards him way from the opposite direction"
+            ],
+            "correctAnswer": "The right, when another vehicle is heading towards him way from the opposite direction"
         },
         {
             "id": 229,
@@ -2288,7 +2519,7 @@ export const questions: QuizData = {
                 "Drive in neutral with the intention to drive the vehicle solely through downforce",
                 "Move slowly on the left side of the road"
             ],
-            "correctAnswer": "Move slowly on the left side of the road"
+            "correctAnswer": "Drive in neutral with the intention to drive the vehicle solely through downforce"
         },
         {
             "id": 231,
@@ -2297,9 +2528,9 @@ export const questions: QuizData = {
             "answers": [
                 "Check there is no danger before overtaking",
                 "Travel in the designated direction",
-                "Make a U-turn in the middle of the road in a populated area"
+                "Make a U turn in the middle of the road in a populated area"
             ],
-            "correctAnswer": "Make a U-turn in the middle of the road in a populated area"
+            "correctAnswer": "Make a U turn in the middle of the road in a populated area"
         },
         {
             "id": 232,
@@ -2335,6 +2566,17 @@ export const questions: QuizData = {
             "correctAnswer": "Should reduce his speed or stop completely when the conditions surrounding him dictate so, especially when visibility is really bad"
         },
         {
+            "id": 235,
+            "category": "Safety",
+            "question": "The driver should:",
+            "answers": [
+                "Overtake from the left",
+                "Take the left",
+                "None"
+            ],
+            "correctAnswer": "Overtake from the left"
+        },
+        {
             "id": 236,
             "category": "Safety",
             "question": "When a driver is passing a vehicle, the driver should:",
@@ -2343,7 +2585,7 @@ export const questions: QuizData = {
                 "Keep to the left side of the road as much as possible with other road users around",
                 "Keep to the midlde if it is a single lane road"
             ],
-            "correctAnswer": "Keep to the midlde if it is a single lane road"
+            "correctAnswer": "Keep to the right side of the road as much as possible with other road users around"
         },
         {
             "id": 237,
@@ -2405,11 +2647,22 @@ export const questions: QuizData = {
             "category": "Safety",
             "question": "It is prohibited to overtake:",
             "answers": [
-                "On single-lane roads",
+                "On single lane roads",
                 "From the right, whatever the case may be",
                 "On bridges and in tunnels"
             ],
             "correctAnswer": "On bridges and in tunnels"
+        },
+        {
+            "id": 243,
+            "category": "Safety",
+            "question": "It is prohibited to overtake:",
+            "answers": [
+                "In case vehicles have stopped because of a traffic obstruction or a sign to do so",
+                "If the left side of the road will be clear after the overtake",
+                "If the vehicle you are overtaking is traveling on the right side of the road"
+            ],
+            "correctAnswer": "In case vehicles have stopped because of a traffic obstruction or a sign to do so"
         },
         {
             "id": 244,
@@ -2420,7 +2673,7 @@ export const questions: QuizData = {
                 "When the width of the road make for a very easy and safe overtake",
                 "If the road is broken into multiple lanes with broken lines"
             ],
-            "correctAnswer": "If the road is broken into multiple lanes with broken lines"
+            "correctAnswer": "At the top edge of ascents, when there is not enough visibility ahead, and when the left side of the road will be clear after the takeover"
         },
         {
             "id": 245,
@@ -2442,7 +2695,7 @@ export const questions: QuizData = {
                 "On narrow or steep mountain road",
                 "On wide roads"
             ],
-            "correctAnswer": "On wide roads"
+            "correctAnswer": "On narrow or steep mountain road"
         },
         {
             "id": 247,
@@ -2453,7 +2706,7 @@ export const questions: QuizData = {
                 "Check that the road he is about to cross is clear",
                 "Keep moving without checking first that the road is clear"
             ],
-            "correctAnswer": "Keep moving without checking first that the road is clear"
+            "correctAnswer": "Check that the road he is about to cross is clear"
         },
         {
             "id": 248,
@@ -2478,6 +2731,17 @@ export const questions: QuizData = {
             "correctAnswer": "Tilt a little to the left but remain on the road"
         },
         {
+            "id": 250,
+            "category": "Safety",
+            "question": "When the driver is about to leave on road and get on another one, the driver should:",
+            "answers": [
+                "Titlt slowly to the right",
+                "Make the appropriate turn with utmost speed so as not to misaccommodate others",
+                "None"
+            ],
+            "correctAnswer": "Titlt slowly to the right"
+        },
+        {
             "id": 251,
             "category": "Safety",
             "question": "It is best to keep a \"safe Distance\":",
@@ -2486,7 +2750,7 @@ export const questions: QuizData = {
                 "From the left and the right sides only",
                 "From the front and the end sides only"
             ],
-            "correctAnswer": "From the front and the end sides only"
+            "correctAnswer": "From all sides of the vehicle"
         },
         {
             "id": 252,
@@ -2497,7 +2761,7 @@ export const questions: QuizData = {
                 "It gives other vehicles a chance to enter the lane",
                 "It prevents distraction with other vehicles"
             ],
-            "correctAnswer": "It prevents distraction with other vehicles"
+            "correctAnswer": "It gives drivers the time to react to what happens"
         },
         {
             "id": 253,
@@ -2530,7 +2794,7 @@ export const questions: QuizData = {
                 "Reduce your speed and be ready to stop",
                 "Stop"
             ],
-            "correctAnswer": "Stop"
+            "correctAnswer": "Reduce your speed and be ready to stop"
         },
         {
             "id": 256,
@@ -2541,7 +2805,7 @@ export const questions: QuizData = {
                 "Release the accelerator to allow the vehicle to slow down, keep the steering wheel straight, and pull off the road",
                 "Press on the brakes to slow down, and pull off the road"
             ],
-            "correctAnswer": "Press on the brakes to slow down, and pull off the road"
+            "correctAnswer": "Release the accelerator to allow the vehicle to slow down, keep the steering wheel straight, and pull off the road"
         },
         {
             "id": 257,
@@ -2557,24 +2821,24 @@ export const questions: QuizData = {
         {
             "id": 258,
             "category": "Safety",
-            "question": "In case of vehicle break-down on the highway",
+            "question": "In case of vehicle break down on the highway",
             "answers": [
                 "Wait inside the vehicle until the road assistance vehicle reaches you",
                 "Place the warning triangle and turn on the headlights to warn other drivers",
                 "Place the warning triangle and activate all four signal lights to warn other drivers"
             ],
-            "correctAnswer": "Place the warning triangle and activate all four signal lights to warn other drivers"
+            "correctAnswer": "Wait inside the vehicle until the road assistance vehicle reaches you"
         },
         {
-            "id": 260,
+            "id": 259,
             "category": "Safety",
-            "question": "If the road is marked with one solid line and one broken line:",
+            "question": "When you enter a highway, you should:",
             "answers": [
-                "The driver may not change lanes if the broken line is to the left",
-                "The driver may change lanes if the broken line is to the left",
-                "The driver may not change lanes if the broken line is to the right"
+                "Slow down",
+                "Drive below the speed limit",
+                "The driver may not change lanes if the broken line is to the left"
             ],
-            "correctAnswer": "The driver may not change lanes if the broken line is to the right"
+            "correctAnswer": "The driver may not change lanes if the broken line is to the left"
         },
         {
             "id": 261,
@@ -2596,7 +2860,7 @@ export const questions: QuizData = {
                 "Head directly to a repair shop",
                 "Turn off the engine"
             ],
-            "correctAnswer": "Turn off the engine"
+            "correctAnswer": "Quickly press on the brakes with high frequency"
         },
         {
             "id": 263,
@@ -2607,7 +2871,7 @@ export const questions: QuizData = {
                 "Drive at the upper speed limit and turn on the lights",
                 "Drive at the upper speed limit"
             ],
-            "correctAnswer": "Drive at the upper speed limit"
+            "correctAnswer": "Drive below the upper speed limit so as to accommodate road conditions"
         },
         {
             "id": 264,
@@ -2645,13 +2909,13 @@ export const questions: QuizData = {
         {
             "id": 267,
             "category": "Safety",
-            "question": "On a four-way intersection, the vehicle that goes first is:",
+            "question": "On a four way intersection, the vehicle that goes first is:",
             "answers": [
                 "The vehicle that arrived first and already entered the intersection",
                 "The vehicle that arrived first",
                 "The vehicle that is turning right"
             ],
-            "correctAnswer": "The vehicle that is turning right"
+            "correctAnswer": "The vehicle that arrived first and already entered the intersection"
         },
         {
             "id": 268,
@@ -2662,7 +2926,18 @@ export const questions: QuizData = {
                 "A solid yellow light",
                 "A flashing yellow light"
             ],
-            "correctAnswer": "A flashing yellow light"
+            "correctAnswer": "A flashing red light"
+        },
+        {
+            "id": 269,
+            "category": "Safety",
+            "question": "When you are sharing the road",
+            "answers": [
+                "Require a smaller turning radius",
+                "Require less time to overtake in descents",
+                "Need a bigger safe distance with other vehicles to be able to stop"
+            ],
+            "correctAnswer": "Require a smaller turning radius"
         },
         {
             "id": 270,
@@ -2695,12 +2970,12 @@ export const questions: QuizData = {
                 "Hazard lights, and/or low beam",
                 "Hazard lights, and/or high beam"
             ],
-            "correctAnswer": "Hazard lights, and/or high beam"
+            "correctAnswer": "Hazard lights, and/or low beam"
         },
         {
             "id": 273,
             "category": "Safety",
-            "question": "When overtaking on a multiple- lane highway:",
+            "question": "When overtaking on a multiple  lane highway:",
             "answers": [
                 "No need to give a signal",
                 "Keep your eyes on the parallel lane",
@@ -2728,7 +3003,7 @@ export const questions: QuizData = {
                 "Give the right of way to the driver on the left",
                 "Stop and wait until the police gets to the intersection"
             ],
-            "correctAnswer": "Stop and wait until the police gets to the intersection"
+            "correctAnswer": "Act as if you are at an intersection without traffic lights"
         },
         {
             "id": 276,
@@ -2739,7 +3014,7 @@ export const questions: QuizData = {
                 "Change lanes",
                 "Increase your speed"
             ],
-            "correctAnswer": "Increase your speed"
+            "correctAnswer": "Maintain or decrease your speed"
         },
         {
             "id": 277,
@@ -2761,7 +3036,18 @@ export const questions: QuizData = {
                 "The driver coming from the left should give the right of way to the other driver",
                 "Each will go on his way without giving priority to the other"
             ],
-            "correctAnswer": "Each will go on his way without giving priority to the other"
+            "correctAnswer": "The driver coming from the left should give the right of way to the other driver"
+        },
+        {
+            "id": 279,
+            "category": "Safety",
+            "question": "Before overtaking, entering a curve, or being overtaken, you should",
+            "answers": [
+                "Reduce your speed, give a signal as you take the other lane",
+                "Slow down, give enough signal to other road users, and check the mirrors and the blind spots",
+                "Reduce your speed, give a signal to other drivers, and check the mirrors"
+            ],
+            "correctAnswer": "Slow down, give enough signal to other road users, and check the mirrors and the blind spots"
         },
         {
             "id": 280,
@@ -2805,7 +3091,7 @@ export const questions: QuizData = {
                 "Travel in other than the designated direction",
                 "Stay awake and in control of their vehicles"
             ],
-            "correctAnswer": "Stay awake and in control of their vehicles"
+            "correctAnswer": "Travel in other than the designated direction"
         },
         {
             "id": 284,
@@ -2824,10 +3110,10 @@ export const questions: QuizData = {
             "question": "Drivers are strictly prohibited to:",
             "answers": [
                 "Travel in the designated direction",
-                "Make a U-turn on the high way",
+                "Make a U turn on the high way",
                 "Check there is no danger before overtaking"
             ],
-            "correctAnswer": "Check there is no danger before overtaking"
+            "correctAnswer": "Make a U turn on the high way"
         },
         {
             "id": 286,
@@ -2863,6 +3149,17 @@ export const questions: QuizData = {
             "correctAnswer": "Already in the intersection"
         },
         {
+            "id": 289,
+            "category": "Safety",
+            "question": "Drivers are strictly prohibited to:",
+            "answers": [
+                "Travel on the right side of the road",
+                "Check there is no danger before overtaking",
+                "Repair vehicles on the freeway, except in extreme situations"
+            ],
+            "correctAnswer": "Repair vehicles on the freeway, except in extreme situations"
+        },
+        {
             "id": 290,
             "category": "Safety",
             "question": "The driver should keep to the extreme right:",
@@ -2871,7 +3168,7 @@ export const questions: QuizData = {
                 "When the driver wants to overtake another vehicle",
                 "When the driver has enough visibility ahead"
             ],
-            "correctAnswer": "When the driver has enough visibility ahead"
+            "correctAnswer": "When the driver is traveling below traffic speed"
         },
         {
             "id": 291,
@@ -2882,7 +3179,7 @@ export const questions: QuizData = {
                 "0.3 grams/liter",
                 "0.4 grams/liter"
             ],
-            "correctAnswer": "0.4 grams/liter"
+            "correctAnswer": "0.5 grams/liter"
         },
         {
             "id": 292,
@@ -2893,7 +3190,7 @@ export const questions: QuizData = {
                 "0 grams/liter",
                 "0.3 grams/liter"
             ],
-            "correctAnswer": "0.3 grams/liter"
+            "correctAnswer": "0 grams/liter"
         },
         {
             "id": 293,
@@ -2904,7 +3201,7 @@ export const questions: QuizData = {
                 "Use one hand to drive and the other to answer the phone",
                 "Use both hands to drive, and answer the call using bluetooth technology"
             ],
-            "correctAnswer": "Use both hands to drive, and answer the call using bluetooth technology"
+            "correctAnswer": "Use any communication devices"
         },
         {
             "id": 294,
@@ -2915,7 +3212,7 @@ export const questions: QuizData = {
                 "120 km/hour",
                 "80 km/hour"
             ],
-            "correctAnswer": "80 km/hour"
+            "correctAnswer": "100 km/hour"
         },
         {
             "id": 295,
@@ -2937,7 +3234,7 @@ export const questions: QuizData = {
                 "50 km/hour",
                 "60 km/hour"
             ],
-            "correctAnswer": "60 km/hour"
+            "correctAnswer": "50 km/hour"
         },
         {
             "id": 297,
@@ -2959,7 +3256,18 @@ export const questions: QuizData = {
                 "30 meters",
                 "40 meters"
             ],
-            "correctAnswer": "40 meters"
+            "correctAnswer": "30 meters"
+        },
+        {
+            "id": 299,
+            "category": "Safety",
+            "question": "On the freeway, you place the warning triangle in front or behind the vehicle, depending on the direction of traffic, at the following distance from the vehicle:",
+            "answers": [
+                "70 meters",
+                "50 meters",
+                "60 meters"
+            ],
+            "correctAnswer": "50 meters"
         },
         {
             "id": 300,
@@ -2970,7 +3278,7 @@ export const questions: QuizData = {
                 "150 meters",
                 "130 meters"
             ],
-            "correctAnswer": "130 meters"
+            "correctAnswer": "150 meters"
         },
         {
             "id": 301,
@@ -2992,7 +3300,7 @@ export const questions: QuizData = {
                 "The car may be impounded",
                 "This is a Class 2 violation"
             ],
-            "correctAnswer": "This is a Class 2 violation"
+            "correctAnswer": "All of the above"
         },
         {
             "id": 303,
@@ -3003,7 +3311,7 @@ export const questions: QuizData = {
                 "4 years from manufacturing date or 1.6 mm thread thickness, whichever comes first",
                 "5 years from manufacturing date or 1.6 mm thread thickness, whichever comes last"
             ],
-            "correctAnswer": "5 years from manufacturing date or 1.6 mm thread thickness, whichever comes last"
+            "correctAnswer": "6 years from manufacturing date or 1.6 mm thread thickness, whichever comes first"
         },
         {
             "id": 304,
@@ -3025,7 +3333,7 @@ export const questions: QuizData = {
                 "Three months",
                 "One month"
             ],
-            "correctAnswer": "One month"
+            "correctAnswer": "Two months"
         },
         {
             "id": 306,
@@ -3036,7 +3344,7 @@ export const questions: QuizData = {
                 "You can cross the line",
                 "You can travel on the line"
             ],
-            "correctAnswer": "You can travel on the line"
+            "correctAnswer": "You can cross the line"
         },
         {
             "id": 307,
@@ -3061,6 +3369,17 @@ export const questions: QuizData = {
             "correctAnswer": "Use the right lane"
         },
         {
+            "id": 309,
+            "category": "Safety",
+            "question": "If the lane is marked with a solid yellow line and a broken yellow line:",
+            "answers": [
+                "The driver can change lane if the solid line is to the right, and cannot change lane if the broken line is to the right",
+                "The driver cannot change lane if the solid or borken line is to the right",
+                "The driver can change lane if the broken line is to the right, and cannot change lane if the solid line is to the right"
+            ],
+            "correctAnswer": "The driver can change lane if the broken line is to the right, and cannot change lane if the solid line is to the right"
+        },
+        {
             "id": 310,
             "category": "Safety",
             "question": "The driver should give the right of way to:",
@@ -3069,7 +3388,7 @@ export const questions: QuizData = {
                 "Vehicles",
                 "Trucks"
             ],
-            "correctAnswer": "Trucks"
+            "correctAnswer": "Pedestrians"
         },
         {
             "id": 311,
@@ -3080,7 +3399,7 @@ export const questions: QuizData = {
                 "Vehicles moving upwards",
                 "It depends on the road itself"
             ],
-            "correctAnswer": "It depends on the road itself"
+            "correctAnswer": "Vehicles moving upwards"
         },
         {
             "id": 312,
@@ -3157,7 +3476,7 @@ export const questions: QuizData = {
                 "65 CM",
                 "70 CM"
             ],
-            "correctAnswer": "70 CM"
+            "correctAnswer": "75 CM"
         },
         {
             "id": 319,
@@ -3168,18 +3487,29 @@ export const questions: QuizData = {
                 "45 CM",
                 "60 CM"
             ],
-            "correctAnswer": "60 CM"
+            "correctAnswer": "50 CM"
+        },
+        {
+            "id": 320,
+            "category": "Safety",
+            "question": "Drivers are prohibited to obstruct traffic by:",
+            "answers": [
+                "Stopping slowly",
+                "Travelling below the lower speed limit",
+                "Stopping suddenly without a valid reason to do so"
+            ],
+            "correctAnswer": "Stopping suddenly without a valid reason to do so"
         },
         {
             "id": 321,
             "category": "Safety",
-            "question": "When you meet head-on with another vehicle on a two-way road, who should reverse?",
+            "question": "When you meet head on with another vehicle on a two way road, who should reverse?",
             "answers": [
                 "A group of vehicles for a single vehicle",
                 "A single vehicle for a group of vehicles",
                 "Heavy vehicles for a single vehicle"
             ],
-            "correctAnswer": "Heavy vehicles for a single vehicle"
+            "correctAnswer": "A single vehicle for a group of vehicles"
         },
         {
             "id": 322,
@@ -3212,7 +3542,7 @@ export const questions: QuizData = {
                 "In the front seats, in all types of vehicles",
                 "In the front and back seats, in all types of vehicles"
             ],
-            "correctAnswer": "In the front and back seats, in all types of vehicles"
+            "correctAnswer": "In the front and back seats when on the highway, in all types of vehicles"
         },
         {
             "id": 325,
@@ -3230,11 +3560,22 @@ export const questions: QuizData = {
             "category": "Safety",
             "question": "When the traffic policemans both hands are stretched horizontally, it means:",
             "answers": [
-                "\"Stop\" -- for all road users coming from directions that cross with the strecthed hands directions",
-                "\"Slow down\" -- for all road users coming from directions that cross with the strecthed hands directions",
-                "\"Make Way\" -- for all road users coming from directions that cross with the strecthed hands directions"
+                "\"Stop\"    for all road users coming from directions that cross with the strecthed hands directions",
+                "\"Slow down\"    for all road users coming from directions that cross with the strecthed hands directions",
+                "\"Make Way\"    for all road users coming from directions that cross with the strecthed hands directions"
             ],
-            "correctAnswer": "\"Make Way\" -- for all road users coming from directions that cross with the strecthed hands directions"
+            "correctAnswer": "\"Stop\"    for all road users coming from directions that cross with the strecthed hands directions"
+        },
+        {
+            "id": 327,
+            "category": "Safety",
+            "question": "Every vehicle should be fitted with",
+            "answers": [
+                "Two registration plates with the vehicle number, at the front and back sides of the vehicles",
+                "A registration plate at the back side of the vehicle",
+                "Two registration plates with the vehicle number, at front or back side of the"
+            ],
+            "correctAnswer": "Two registration plates with the vehicle number, at the front and back sides of the vehicles"
         },
         {
             "id": 328,
@@ -3289,7 +3630,7 @@ export const questions: QuizData = {
                 "Turning left",
                 "Slowing down"
             ],
-            "correctAnswer": "Slowing down"
+            "correctAnswer": "Turning left"
         },
         {
             "id": 333,
@@ -3311,7 +3652,7 @@ export const questions: QuizData = {
                 "They do it quickly",
                 "Vehicles turning right cannot cross a red light"
             ],
-            "correctAnswer": "Vehicles turning right cannot cross a red light"
+            "correctAnswer": "They stop at the traffic light, make sure they can cross without putting pedestrians and vehicles at risk"
         },
         {
             "id": 335,
@@ -3322,18 +3663,29 @@ export const questions: QuizData = {
                 "The driver can change lanes, but has to do it quickly",
                 "The driver can change lanes, provided he makes sure there is enough gap in the other lane"
             ],
-            "correctAnswer": "The driver can change lanes, provided he makes sure there is enough gap in the other lane"
+            "correctAnswer": "The driver cannot change lanes"
         },
         {
             "id": 336,
             "category": "Safety",
-            "question": "Children under ____ cannot sit in the front seat:",
+            "question": "Children under cannot sit in the front seat:",
             "answers": [
                 "10 years",
                 "12 years",
                 "8 years"
             ],
-            "correctAnswer": "8 years"
+            "correctAnswer": "10 years"
+        },
+        {
+            "id": 337,
+            "category": "Safety",
+            "question": "It is strictly prohibited to throw stuff from the vehicle as this would:",
+            "answers": [
+                "Cause road markings to fade away",
+                "Cause accidents, and clog water drainage system",
+                "Obstruct policemen"
+            ],
+            "correctAnswer": "Cause accidents, and clog water drainage system"
         },
         {
             "id": 338,
@@ -3341,7 +3693,7 @@ export const questions: QuizData = {
             "question": "What is the difference between yellow lines and white lines when they are in the middle of the road?",
             "answers": [
                 "Yellow lines are used on road sides only, whereas white lines are used to mark vehicle lanes",
-                "Yellow lines are used for one-way roads whereas white lines are used for two-way streets",
+                "Yellow lines are used for one way roads whereas white lines are used for two way streets",
                 "White lines demarcate lanes that go in the same direction, yellow lines are demarcate lanes that go in opposite directions"
             ],
             "correctAnswer": "White lines demarcate lanes that go in the same direction, yellow lines are demarcate lanes that go in opposite directions"
@@ -3349,7 +3701,7 @@ export const questions: QuizData = {
         {
             "id": 339,
             "category": "Safety",
-            "question": "Drivers cannot stop and park within a distance of _____ from the top edge of ascent, curb, intersection, roundabout, and traffic light",
+            "question": "Drivers cannot stop and park within a distance of from the top edge of ascent, curb, intersection, roundabout, and traffic light",
             "answers": [
                 "50 meters",
                 "30 meters",
@@ -3388,7 +3740,7 @@ export const questions: QuizData = {
                 "Cross white broken lines",
                 "Travel between white lines"
             ],
-            "correctAnswer": "Travel between white lines"
+            "correctAnswer": "Travel on white lines"
         }
     ]
 }

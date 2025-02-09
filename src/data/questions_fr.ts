@@ -11,7 +11,7 @@ export const questions: QuizData = {
                 "Klaxonner",
                 "Allumer les feux de croisement et accélérer"
             ],
-            "correctAnswer": "Allumer les feux de croisement et accélérer"
+            "correctAnswer": "Allumer les feux de croisement et ralentir"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@ export const questions: QuizData = {
                 "Utiliser les feux de route",
                 "Ne pas allumer les feux"
             ],
-            "correctAnswer": "Ne pas allumer les feux"
+            "correctAnswer": "Utiliser les feux de croisement"
         },
         {
             "id": 3,
@@ -44,18 +44,18 @@ export const questions: QuizData = {
                 "Il faut arrêter le moteur",
                 "Il nest pas obligatoire darrêter le moteur"
             ],
-            "correctAnswer": "Il nest pas obligatoire darrêter le moteur"
+            "correctAnswer": "Il faut arrêter le moteur"
         },
         {
             "id": 5,
             "category": "Safety",
-            "question": "Si le feu jaune s’allume au moment de vous engager dans une intersection, vous devez:",
+            "question": "Si le feu jaune s allume au moment de vous engager dans une intersection, vous devez:",
             "answers": [
                 "Vous arrêter immédiatement",
                 "Continuer de rouler avec prudence",
                 "Garder les yeux sur les feux"
             ],
-            "correctAnswer": "Garder les yeux sur les feux"
+            "correctAnswer": "Continuer de rouler avec prudence"
         },
         {
             "id": 6,
@@ -71,13 +71,13 @@ export const questions: QuizData = {
         {
             "id": 7,
             "category": "Safety",
-            "question": "Sur une intersection, en présence simultanée d’un agent de circulation, des feux tricolores et dun signe fixe de route, vous devez:",
+            "question": "Sur une intersection, en présence simultanée d un agent de circulation, des feux tricolores et dun signe fixe de route, vous devez:",
             "answers": [
                 "Suivre les instructions de lagent de circulation",
                 "Réspecter les feux de circulation",
                 "Réspecter le signe fixe de route"
             ],
-            "correctAnswer": "Réspecter le signe fixe de route"
+            "correctAnswer": "Suivre les instructions de lagent de circulation"
         },
         {
             "id": 8,
@@ -88,7 +88,7 @@ export const questions: QuizData = {
                 "Porter la ceinture de sécurité, ajuster les miroirs, et puis le siège",
                 "Porter la ceinture de sécurité, ajuster le siège, et puis les miroirs"
             ],
-            "correctAnswer": "Porter la ceinture de sécurité, ajuster le siège, et puis les miroirs"
+            "correctAnswer": "Ajuster le siège, les miroirs, puis porter la ceinture de sécurité"
         },
         {
             "id": 9,
@@ -99,7 +99,18 @@ export const questions: QuizData = {
                 "Doit effectuer une inspection routinère des systèmes du véhicule",
                 "Ne doit pas effectuer une inspection routinère des systèmes du véhicule si le moteur fonctionne bien"
             ],
-            "correctAnswer": "Ne doit pas effectuer une inspection routinère des systèmes du véhicule si le moteur fonctionne bien"
+            "correctAnswer": "Doit écouter la météo"
+        },
+        {
+            "id": 10,
+            "category": "Law",
+            "question": "En circulant, il est acceptable que le conducteur:",
+            "answers": [
+                "Lise le journal",
+                "Utilise le téléphone",
+                "Ecoute la radio à bas volume"
+            ],
+            "correctAnswer": "Ecoute la radio à bas volume"
         },
         {
             "id": 11,
@@ -115,13 +126,13 @@ export const questions: QuizData = {
         {
             "id": 12,
             "category": "Law",
-            "question": "Le but de l’appui-tête est de:",
+            "question": "Le but de l appui tête est de:",
             "answers": [
-                "Protéger le cou en cas d’une collision à l’arrière du véhicule",
+                "Protéger le cou en cas d une collision à l arrière du véhicule",
                 "Servir de coussin durant les longs voyages",
                 "Poser la tête pour se relaxer"
             ],
-            "correctAnswer": "Poser la tête pour se relaxer"
+            "correctAnswer": "Protéger le cou en cas d une collision à l arrière du véhicule"
         },
         {
             "id": 13,
@@ -132,7 +143,7 @@ export const questions: QuizData = {
                 "Quand il a sommeil",
                 "Quand il roule dans la ville"
             ],
-            "correctAnswer": "Quand il roule dans la ville"
+            "correctAnswer": "Quand il a sommeil"
         },
         {
             "id": 14,
@@ -143,7 +154,7 @@ export const questions: QuizData = {
                 "Négatifs",
                 "Positifs et négatifs en même temps"
             ],
-            "correctAnswer": "Positifs et négatifs en même temps"
+            "correctAnswer": "Négatifs"
         },
         {
             "id": 15,
@@ -154,18 +165,18 @@ export const questions: QuizData = {
                 "Ne conduis pas avant que leffet de lalcool nait disparu complètement",
                 "Ne ten préoccupes pas, ça ira"
             ],
-            "correctAnswer": "Ne ten préoccupes pas, ça ira"
+            "correctAnswer": "Ne conduis pas avant que leffet de lalcool nait disparu complètement"
         },
         {
             "id": 16,
             "category": "Law",
-            "question": "Conduire sous l’influence des médicaments est:",
+            "question": "Conduire sous l influence des médicaments est:",
             "answers": [
                 "Dangereux",
                 "Moins pénible",
                 "Sans danger"
             ],
-            "correctAnswer": "Sans danger"
+            "correctAnswer": "Dangereux"
         },
         {
             "id": 17,
@@ -176,18 +187,18 @@ export const questions: QuizData = {
                 "Tirer le frein à main",
                 "Changer le levier vers une vitesse plus petite"
             ],
-            "correctAnswer": "Changer le levier vers une vitesse plus petite"
+            "correctAnswer": "Arrêter le moteur sans verrouiller le volant"
         },
         {
             "id": 18,
             "category": "Law",
-            "question": "Si le capot du moteur souvre de lui-même lorsque que vous roulez sur la route, vous devez immédiatement:",
+            "question": "Si le capot du moteur souvre de lui même lorsque que vous roulez sur la route, vous devez immédiatement:",
             "answers": [
                 "Accélérer un petit peu",
                 "Décélérer graduellement pour vous arrêter du côté de la route",
                 "Appuyer fortement sur la pédale de frein"
             ],
-            "correctAnswer": "Appuyer fortement sur la pédale de frein"
+            "correctAnswer": "Accélérer un petit peu"
         },
         {
             "id": 19,
@@ -198,7 +209,7 @@ export const questions: QuizData = {
                 "Prendre la route un peu plus tard que dhabitude",
                 "Prendre la route de bonne humeur"
             ],
-            "correctAnswer": "Prendre la route de bonne humeur"
+            "correctAnswer": "Prendre la route un peu plus tôt que dhabitude"
         },
         {
             "id": 20,
@@ -209,7 +220,18 @@ export const questions: QuizData = {
                 "Faire le tour du véhicule",
                 "Porter la ceinture de sécurité"
             ],
-            "correctAnswer": "Porter la ceinture de sécurité"
+            "correctAnswer": "Faire le tour du véhicule"
+        },
+        {
+            "id": 21,
+            "category": "Law",
+            "question": "Lors dun embouteillage, le conducteur doit vérifier ses rétroviseurs chaque:",
+            "answers": [
+                "45 secondes",
+                "30 secondes",
+                "4 à 8 secondes"
+            ],
+            "correctAnswer": "4 à 8 secondes"
         },
         {
             "id": 22,
@@ -231,7 +253,7 @@ export const questions: QuizData = {
                 "Les déchets qui pourraient être jetés de ces véhicules",
                 "Le volume de leur radio"
             ],
-            "correctAnswer": "Le volume de leur radio"
+            "correctAnswer": "Les piétons, et surtout les enfants, qui pourraient surgir dentre ces véhicules à nimporte quel moment"
         },
         {
             "id": 24,
@@ -242,7 +264,7 @@ export const questions: QuizData = {
                 "Les sons émis par les systemes antivol",
                 "La porte du coffre quon peut ouvrir"
             ],
-            "correctAnswer": "La porte du coffre quon peut ouvrir"
+            "correctAnswer": "Le fait que ces véhicules pourraient à nimporte quel moment démarrer et joindre la circulation"
         },
         {
             "id": 25,
@@ -264,7 +286,7 @@ export const questions: QuizData = {
                 "à droite",
                 "à gauche"
             ],
-            "correctAnswer": "à gauche"
+            "correctAnswer": "Dans le rétroviseur intérieur"
         },
         {
             "id": 27,
@@ -275,7 +297,7 @@ export const questions: QuizData = {
                 "Peut causer un bruit et une vibration de la pédale de freins",
                 "Ne doit causer ni un bruit ni une vibration de la pédale de freins"
             ],
-            "correctAnswer": "Ne doit causer ni un bruit ni une vibration de la pédale de freins"
+            "correctAnswer": "Peut causer un bruit et une vibration de la pédale de freins"
         },
         {
             "id": 28,
@@ -289,6 +311,17 @@ export const questions: QuizData = {
             "correctAnswer": "Empêche le blocage des freins, et permet au conducteur de maintenir le contrôle de son véhicule"
         },
         {
+            "id": 29,
+            "category": "Law",
+            "question": "En cade de dérapage , vous devez:",
+            "answers": [
+                "Freiner et giriger votre véhicule dans le sens opposé au dérapage",
+                "Retirer le pied de la pédale daccélération sans appuyer sur la pédale de frein, et diriger le véhicule dans le sens du dérapage",
+                "None"
+            ],
+            "correctAnswer": "Retirer le pied de la pédale daccélération sans appuyer sur la pédale de frein, et diriger le véhicule dans le sens du dérapage"
+        },
+        {
             "id": 30,
             "category": "Law",
             "question": "Le conducteur doit laisser un espace de sécurité entre son vehicule et le véhicule devant lui pour:",
@@ -297,7 +330,7 @@ export const questions: QuizData = {
                 "Profiter des vues fabuleuses qui lentourent",
                 "Lire le numéro inscrit sur la plaque dimmatriculation arrière"
             ],
-            "correctAnswer": "Lire le numéro inscrit sur la plaque dimmatriculation arrière"
+            "correctAnswer": "Eviter la collision avec ce véhicule au cas où il sarrête soudainement"
         },
         {
             "id": 31,
@@ -313,13 +346,13 @@ export const questions: QuizData = {
         {
             "id": 32,
             "category": "Safety",
-            "question": "Lorsque vous vous approchez d’une intersection où un feu orange clignote, vous devez:",
+            "question": "Lorsque vous vous approchez d une intersection où un feu orange clignote, vous devez:",
             "answers": [
                 "Porter la ceinture de sécurité",
                 "Céder la priorité",
                 "Continuer à la même vitesse"
             ],
-            "correctAnswer": "Continuer à la même vitesse"
+            "correctAnswer": "Céder la priorité"
         },
         {
             "id": 33,
@@ -341,7 +374,7 @@ export const questions: QuizData = {
                 "Tarrêter immédiatement là où tu es",
                 "Continuer vers ta destination"
             ],
-            "correctAnswer": "Continuer vers ta destination"
+            "correctAnswer": "Te dégager de lautoroute au premier détour"
         },
         {
             "id": 35,
@@ -352,40 +385,51 @@ export const questions: QuizData = {
                 "Les deux mains",
                 "Le bout des doigts"
             ],
-            "correctAnswer": "Le bout des doigts"
+            "correctAnswer": "Les deux mains"
         },
         {
             "id": 36,
             "category": "Safety",
-            "question": "Il n’est pas permis à un camion chargé de prendre:",
+            "question": "Il n est pas permis à un camion chargé de prendre:",
             "answers": [
                 "Plus quun passager",
                 "Plus que le nombre permis de passagers",
-                "Il n’est pas permis aux camions chargés de prendre des passagers"
+                "Il n est pas permis aux camions chargés de prendre des passagers"
             ],
-            "correctAnswer": "Il n’est pas permis aux camions chargés de prendre des passagers"
+            "correctAnswer": "Plus que le nombre permis de passagers"
         },
         {
             "id": 37,
             "category": "Law",
-            "question": "En attelant la remorque au véhicule le conducteur doit s’assurer que:",
+            "question": "En attelant la remorque au véhicule le conducteur doit s assurer que:",
             "answers": [
                 "Les freins de la remorque sont tirés et ses roues touchent le sol",
                 "Les freins de la remorque sont libres et ses roues touchent le sol",
                 "Une seule roue de la remorque touche le sol"
             ],
-            "correctAnswer": "Une seule roue de la remorque touche le sol"
+            "correctAnswer": "Les freins de la remorque sont tirés et ses roues touchent le sol"
         },
         {
             "id": 38,
             "category": "Law",
             "question": "Après avoir attelé la remorque au tracteur, le conducteur doit verifier que:",
             "answers": [
-                "les tuyaux d’air et les fils électriques sont connectés convenablement",
+                "les tuyaux d air et les fils électriques sont connectés convenablement",
                 "seuls les fils électriques sont connectés convenablement",
-                "seuls les tuyaux d’air sont connectés convenablement"
+                "seuls les tuyaux d air sont connectés convenablement"
             ],
-            "correctAnswer": "seuls les tuyaux d’air sont connectés convenablement"
+            "correctAnswer": "les tuyaux d air et les fils électriques sont connectés convenablement"
+        },
+        {
+            "id": 39,
+            "category": "Law",
+            "question": "Pour atteler la remorque, le conducteur du tracteur doit:",
+            "answers": [
+                "Reculer le tracteur lentement au dessus de la remorque",
+                "Reculer le tracteur lentement au dessous de la remorque",
+                "Reculer le tracteur rapidement au dessous de la remorque"
+            ],
+            "correctAnswer": "Reculer le tracteur lentement au dessus de la remorque"
         },
         {
             "id": 40,
@@ -396,7 +440,7 @@ export const questions: QuizData = {
                 "Une surface plane et molle",
                 "Une surface inclinée et dure"
             ],
-            "correctAnswer": "Une surface inclinée et dure"
+            "correctAnswer": "Une surface plane et molle"
         },
         {
             "id": 41,
@@ -407,7 +451,7 @@ export const questions: QuizData = {
                 "Tirer les freins de la remorque et abaisser ses roues au maximum",
                 "Libérer les freins de la remorque et abaisser ses roues au maximum"
             ],
-            "correctAnswer": "Libérer les freins de la remorque et abaisser ses roues au maximum"
+            "correctAnswer": "Tirer les freins de la remorque et abaisser ses roues au maximum"
         },
         {
             "id": 42,
@@ -418,7 +462,7 @@ export const questions: QuizData = {
                 "Au minimum huit",
                 "Trois"
             ],
-            "correctAnswer": "Trois"
+            "correctAnswer": "Au minimum quatre"
         },
         {
             "id": 43,
@@ -429,14 +473,14 @@ export const questions: QuizData = {
                 "Sous un pont ou dans un tunnel",
                 "Sur lautoroute"
             ],
-            "correctAnswer": "Sur lautoroute"
+            "correctAnswer": "Sous un pont ou dans un tunnel"
         },
         {
             "id": 44,
             "category": "Law",
             "question": "Le conducteur du poids lourd doit prendre en considération la largeur de son véhicule notamment:",
             "answers": [
-                "En circulant sur l’autoroute",
+                "En circulant sur l autoroute",
                 "Pendant les sièstes",
                 "En dépassant un autre véhicule"
             ],
@@ -469,11 +513,11 @@ export const questions: QuizData = {
             "category": "Law",
             "question": "Pour éviter que les roues à gauche à larrière du poids lourd ne dépassent la ligne centrale lors dun virage à gauche, vous devez:",
             "answers": [
-                "Prendre l’extrême gauche",
+                "Prendre l extrême gauche",
                 "Prendre un peu votre droite",
                 "Augmenter la vitesse"
             ],
-            "correctAnswer": "Augmenter la vitesse"
+            "correctAnswer": "Prendre un peu votre droite"
         },
         {
             "id": 48,
@@ -481,10 +525,21 @@ export const questions: QuizData = {
             "question": "Pour éviter que les roues à droite à larrière du poids lourd ne se branlent au bord de la route lors dun virage à droite, vous devez:",
             "answers": [
                 "Rouler au milieu de la voie",
-                "Prendre l’extrême droite",
+                "Prendre l extrême droite",
                 "Augmenter la vitesse"
             ],
-            "correctAnswer": "Augmenter la vitesse"
+            "correctAnswer": "Rouler au milieu de la voie"
+        },
+        {
+            "id": 49,
+            "category": "Law",
+            "question": "En vous approchant du sommet d une pente,",
+            "answers": [
+                "vous devez vous attendre à une longue route droite",
+                "vous devez vous attendre à des obstacles",
+                "vous ne devez pas vous attendre à des obstacles"
+            ],
+            "correctAnswer": "vous devez vous attendre à des obstacles"
         },
         {
             "id": 50,
@@ -506,7 +561,7 @@ export const questions: QuizData = {
                 "de la pression hydraulique du système de freinage",
                 "de la forte inclinaison de la pente"
             ],
-            "correctAnswer": "de la forte inclinaison de la pente"
+            "correctAnswer": "de laugmentation de leur température"
         },
         {
             "id": 52,
@@ -517,18 +572,18 @@ export const questions: QuizData = {
                 "Il sera impossible de passer à une vitesse dembrayage plus petite pour contrôler le véhicule",
                 "Il sera possible de dépasser plusieurs véhicules à la fois"
             ],
-            "correctAnswer": "Il sera possible de dépasser plusieurs véhicules à la fois"
+            "correctAnswer": "Il sera impossible de passer à une vitesse dembrayage plus petite pour contrôler le véhicule"
         },
         {
             "id": 53,
             "category": "Law",
-            "question": "Lorsque vous conduisez votre poids lourd le long d’une montée, vous devez:",
+            "question": "Lorsque vous conduisez votre poids lourd le long d une montée, vous devez:",
             "answers": [
                 "Eviter dépuiser le moteur",
                 "Circuler à gauche",
                 "Empêcher les autres véhicules de vous dépasser"
             ],
-            "correctAnswer": "Empêcher les autres véhicules de vous dépasser"
+            "correctAnswer": "Eviter dépuiser le moteur"
         },
         {
             "id": 54,
@@ -539,7 +594,7 @@ export const questions: QuizData = {
                 "Rester à lextrême droite autant que possible",
                 "Rester à lextrême gauche autant que possible"
             ],
-            "correctAnswer": "Rester à lextrême gauche autant que possible"
+            "correctAnswer": "Rester à lextrême droite autant que possible"
         },
         {
             "id": 55,
@@ -555,7 +610,7 @@ export const questions: QuizData = {
         {
             "id": 56,
             "category": "Law",
-            "question": "Si vous allez conduire un véhicule sur un terrain rugueux (off-road), vous devez:",
+            "question": "Si vous allez conduire un véhicule sur un terrain rugueux (off road), vous devez:",
             "answers": [
                 "Veiller sur ce qui se passe derriere vous",
                 "Augmenter un peu votre vitesse",
@@ -572,7 +627,18 @@ export const questions: QuizData = {
                 "Aide les conducteurs à éviter la confusion routière",
                 "Est une sorte davertissement"
             ],
-            "correctAnswer": "Est une sorte davertissement"
+            "correctAnswer": "Aide les conducteurs à éviter la confusion routière"
+        },
+        {
+            "id": 58,
+            "category": "Law",
+            "question": "Pour éviter les accidents, le conducteur doit éviter autant que possible:",
+            "answers": [
+                "La marche arrière",
+                "La décélération progressive",
+                "None"
+            ],
+            "correctAnswer": "La marche arrière"
         },
         {
             "id": 59,
@@ -583,7 +649,7 @@ export const questions: QuizData = {
                 "Aux femmes qui conduisent",
                 "Au véhicule qui roule à grande vitesse"
             ],
-            "correctAnswer": "Au véhicule qui roule à grande vitesse"
+            "correctAnswer": "A lautocar qui a allumé les feux de détresse"
         },
         {
             "id": 60,
@@ -594,7 +660,7 @@ export const questions: QuizData = {
                 "Au véhicule qui prend le rond point",
                 "Au véhicule à sa droite"
             ],
-            "correctAnswer": "Au véhicule à sa droite"
+            "correctAnswer": "Au véhicule qui est déjà dans le rond point"
         },
         {
             "id": 61,
@@ -605,7 +671,7 @@ export const questions: QuizData = {
                 "Nimporte où ,pourvu quil ne gêne pas la circulation",
                 "A gauche"
             ],
-            "correctAnswer": "A gauche"
+            "correctAnswer": "A doite, selon le sens de circulation du véhicule"
         },
         {
             "id": 62,
@@ -616,7 +682,7 @@ export const questions: QuizData = {
                 "Rend le conducteur passif et diminue son réflexe",
                 "Permet au conducteur de conduire plus vite"
             ],
-            "correctAnswer": "Permet au conducteur de conduire plus vite"
+            "correctAnswer": "Rend le conducteur passif et diminue son réflexe"
         },
         {
             "id": 63,
@@ -627,23 +693,23 @@ export const questions: QuizData = {
                 "Diminue le réflexe du conducteur et affaiblit sa mémoire",
                 "Permet au conducteur de se concentrer"
             ],
-            "correctAnswer": "Permet au conducteur de se concentrer"
+            "correctAnswer": "Diminue le réflexe du conducteur et affaiblit sa mémoire"
         },
         {
             "id": 64,
             "category": "Law",
-            "question": "Dans les longs trajets, le conducteur doit s’arrêter chaque:",
+            "question": "Dans les longs trajets, le conducteur doit s arrêter chaque:",
             "answers": [
                 "4 heures",
                 "10 heures",
                 "8 heures"
             ],
-            "correctAnswer": "8 heures"
+            "correctAnswer": "4 heures"
         },
         {
             "id": 65,
             "category": "Law",
-            "question": "Dans les longs trajets, le conducteur doit s’arrêter chaque :",
+            "question": "Dans les longs trajets, le conducteur doit s arrêter chaque :",
             "answers": [
                 "900 kilometres",
                 "750 kilometres",
@@ -654,13 +720,13 @@ export const questions: QuizData = {
         {
             "id": 66,
             "category": "Law",
-            "question": "Conduire sous l’influence de l’alcool:",
+            "question": "Conduire sous l influence de l alcool:",
             "answers": [
                 "Met en danger la vie du conducteur et celle des autres usagers de la route",
                 "Met en danger la vie des usagers de la route seulement",
                 "Met en danger la vie du conducteur"
             ],
-            "correctAnswer": "Met en danger la vie du conducteur"
+            "correctAnswer": "Met en danger la vie du conducteur et celle des autres usagers de la route"
         },
         {
             "id": 67,
@@ -676,13 +742,24 @@ export const questions: QuizData = {
         {
             "id": 68,
             "category": "Law",
-            "question": "La meilleure façon de connaître l’effet d’un médicament sur la capacité de conduire est de:",
+            "question": "La meilleure façon de connaître l effet d un médicament sur la capacité de conduire est de:",
             "answers": [
                 "Poser la question à un autre conducteur",
                 "Poser la question au médecin ou au pharmacien",
                 "Le tester sur un autre conducteur"
             ],
-            "correctAnswer": "Le tester sur un autre conducteur"
+            "correctAnswer": "Poser la question au médecin ou au pharmacien"
+        },
+        {
+            "id": 69,
+            "category": "Law",
+            "question": "Rouler sous l influence de l alcool et des drogues crée chez le conducteur un faux sentiment:",
+            "answers": [
+                "De peur",
+                "De courage et d audace",
+                "De colère"
+            ],
+            "correctAnswer": "De courage et d audace"
         },
         {
             "id": 70,
@@ -693,7 +770,7 @@ export const questions: QuizData = {
                 "Ne devez jamais compter sur les instructions du conducteur de ce véhicule",
                 "Compter sur les instructions du conducteur du véhicule derrière vous"
             ],
-            "correctAnswer": "Compter sur les instructions du conducteur du véhicule derrière vous"
+            "correctAnswer": "Ne devez jamais compter sur les instructions du conducteur de ce véhicule"
         },
         {
             "id": 71,
@@ -704,7 +781,7 @@ export const questions: QuizData = {
                 "LorsquIl sarrête pour la sièste",
                 "Pendant le chargement du véhicule"
             ],
-            "correctAnswer": "Pendant le chargement du véhicule"
+            "correctAnswer": "Lorsquil entre dans un endroit étroit"
         },
         {
             "id": 72,
@@ -715,18 +792,18 @@ export const questions: QuizData = {
                 "La caméra arrière",
                 "Les rétroviseurs"
             ],
-            "correctAnswer": "Les rétroviseurs"
+            "correctAnswer": "Quelquun qui laide"
         },
         {
             "id": 73,
             "category": "Law",
-            "question": "Après le remplissage dun camion-citerne, le conducteur doit:",
+            "question": "Après le remplissage dun camion citerne, le conducteur doit:",
             "answers": [
                 "Vérifier que les valves de vidange sont bien fermées",
                 "Vérifier que tous les couvercles et toutes les valves de vidange sont bien fermés",
                 "Vérifier que les couvercles sont bien fermées"
             ],
-            "correctAnswer": "Vérifier que les couvercles sont bien fermées"
+            "correctAnswer": "Vérifier que tous les couvercles et toutes les valves de vidange sont bien fermés"
         },
         {
             "id": 74,
@@ -737,18 +814,18 @@ export const questions: QuizData = {
                 "La circulation sur une seule roue",
                 "Le contrat dassurance"
             ],
-            "correctAnswer": "Le contrat dassurance"
+            "correctAnswer": "La tenue protectrice"
         },
         {
             "id": 75,
             "category": "Law",
             "question": "La tenue en cuir du motocycliste est résistante:",
             "answers": [
-                "A la friction avec l’asphalte et les cailloux",
+                "A la friction avec l asphalte et les cailloux",
                 "Au feu",
                 "A la circulation rapide et le dépassement des voies"
             ],
-            "correctAnswer": "A la circulation rapide et le dépassement des voies"
+            "correctAnswer": "A la friction avec l asphalte et les cailloux"
         },
         {
             "id": 76,
@@ -759,18 +836,29 @@ export const questions: QuizData = {
                 "il est couvert par la loi et par les compagnies dassurance en cas daccident",
                 "il peut mieux contrôler le volant sur les descentes"
             ],
-            "correctAnswer": "il peut mieux contrôler le volant sur les descentes"
+            "correctAnswer": "ses mains sont protégées du froid et des blessures"
         },
         {
             "id": 77,
             "category": "Law",
             "question": "Lorsque le motocycliste met les bottes protectrices, cela protège:",
             "answers": [
-                "Ses cuisses et ses genoux du vent et de l’eau",
+                "Ses cuisses et ses genoux du vent et de l eau",
                 "Ses pieds de la poussière",
-                "Ses pieds des blessures, du froid, et de l’eau"
+                "Ses pieds des blessures, du froid, et de l eau"
             ],
-            "correctAnswer": "Ses pieds des blessures, du froid, et de l’eau"
+            "correctAnswer": "Ses pieds des blessures, du froid, et de l eau"
+        },
+        {
+            "id": 78,
+            "category": "Law",
+            "question": "Lorsque le motocycliste met la tenue protectrice de la colonne vertébrale, cela protège:",
+            "answers": [
+                "La poitrine et l abdomen de la chaleur et du froid",
+                "Sa colonne vertébrale et sa moelle épinière de la pluie",
+                "None"
+            ],
+            "correctAnswer": "La poitrine et l abdomen de la chaleur et du froid"
         },
         {
             "id": 79,
@@ -781,7 +869,7 @@ export const questions: QuizData = {
                 "Les yeux du vent, de la pluie, du sable et des insectes",
                 "Les yeux de lécoulement des larmes"
             ],
-            "correctAnswer": "Les yeux de lécoulement des larmes"
+            "correctAnswer": "Les yeux du vent, de la pluie, du sable et des insectes"
         },
         {
             "id": 80,
@@ -803,7 +891,7 @@ export const questions: QuizData = {
                 "Illégal",
                 "Légal"
             ],
-            "correctAnswer": "Légal"
+            "correctAnswer": "Illégal"
         },
         {
             "id": 82,
@@ -814,7 +902,7 @@ export const questions: QuizData = {
                 "Ne lève pas la responsabilité juridique du conducteur",
                 "est très logique"
             ],
-            "correctAnswer": "est très logique"
+            "correctAnswer": "Lève la responsabilité juridique du conducteur"
         },
         {
             "id": 83,
@@ -825,7 +913,7 @@ export const questions: QuizData = {
                 "Fluorescente",
                 "De sport"
             ],
-            "correctAnswer": "De sport"
+            "correctAnswer": "Fluorescente"
         },
         {
             "id": 84,
@@ -833,21 +921,21 @@ export const questions: QuizData = {
             "question": "Pour être vu en circulant la nuit, il est conseillé au motocycliste :",
             "answers": [
                 "De mettre des signaux ou des bandes phosphorescentes",
-                "D’éteindre les feux et de mettre des signaux ou des bandes phosphorescentes",
+                "D éteindre les feux et de mettre des signaux ou des bandes phosphorescentes",
                 "De faire du bruit avec les freins"
             ],
-            "correctAnswer": "De faire du bruit avec les freins"
+            "correctAnswer": "De mettre des signaux ou des bandes phosphorescentes"
         },
         {
             "id": 85,
             "category": "Law",
-            "question": "Si le motocycle est équipé d’un système de freinage hydraulique, le motocycliste doit régulièrement:",
+            "question": "Si le motocycle est équipé d un système de freinage hydraulique, le motocycliste doit régulièrement:",
             "answers": [
                 "Vérifier le niveau du lubrifiant des freins",
                 "Diminuer lutilisation des freins",
                 "Régler la tension du fil"
             ],
-            "correctAnswer": "Régler la tension du fil"
+            "correctAnswer": "Vérifier le niveau du lubrifiant des freins"
         },
         {
             "id": 86,
@@ -858,18 +946,18 @@ export const questions: QuizData = {
                 "3 millimetres",
                 "6 millimetres"
             ],
-            "correctAnswer": "6 millimetres"
+            "correctAnswer": "3 millimetres"
         },
         {
             "id": 87,
             "category": "Law",
             "question": "Pour manipuler facilement son guidon, le motocycliste doit :",
             "answers": [
-                "S’asseoir loin du guidon",
-                "S’asseoir près du guidon",
+                "S asseoir loin du guidon",
+                "S asseoir près du guidon",
                 "Tenir le guidon avec une seule main"
             ],
-            "correctAnswer": "Tenir le guidon avec une seule main"
+            "correctAnswer": "S asseoir près du guidon"
         },
         {
             "id": 88,
@@ -880,18 +968,29 @@ export const questions: QuizData = {
                 "Avec le poignet droit tourné vers le haut",
                 "Avec le poignet gauche tourné vers le haut"
             ],
-            "correctAnswer": "Avec le poignet gauche tourné vers le haut"
+            "correctAnswer": "Avec le poignet droit tourné vers le bas"
+        },
+        {
+            "id": 89,
+            "category": "Law",
+            "question": "Le freinage est plus efficace lorsque le motocycliste",
+            "answers": [
+                "Son pied, en lappuyant sur lasphalte de la route",
+                "Les freins arrière seulement",
+                "Les freins avant et arrière"
+            ],
+            "correctAnswer": "Les freins avant et arrière"
         },
         {
             "id": 90,
             "category": "Law",
-            "question": "Pour éviter le dérapage lors d’un freinage sévère, le motocycliste doit:",
+            "question": "Pour éviter le dérapage lors d un freinage sévère, le motocycliste doit:",
             "answers": [
                 "Prendre un virage",
                 "Rouler à la bonne vitesse",
                 "Garder une direction droite"
             ],
-            "correctAnswer": "Garder une direction droite"
+            "correctAnswer": "Rouler à la bonne vitesse"
         },
         {
             "id": 91,
@@ -902,7 +1001,7 @@ export const questions: QuizData = {
                 "Une surface glissante et un reflexe nerveux du conducteur",
                 "Un moteur qui tourne rapidement et un guidon élevé"
             ],
-            "correctAnswer": "Un moteur qui tourne rapidement et un guidon élevé"
+            "correctAnswer": "Une surface glissante et un reflexe nerveux du conducteur"
         },
         {
             "id": 92,
@@ -913,7 +1012,7 @@ export const questions: QuizData = {
                 "Rouler rapidement et allumer les feux de croisement",
                 "Rouler lentement et laisser une courte distance de sécurité"
             ],
-            "correctAnswer": "Rouler lentement et laisser une courte distance de sécurité"
+            "correctAnswer": "Rouler lentement et laisser une longue distance de sécurité"
         },
         {
             "id": 93,
@@ -924,29 +1023,29 @@ export const questions: QuizData = {
                 "la rotation coaxiale des deux roues",
                 "la mauvaise distribution du poids"
             ],
-            "correctAnswer": "la mauvaise distribution du poids"
+            "correctAnswer": "la déviation dau moins une roue ou un pneu"
         },
         {
             "id": 94,
             "category": "Law",
             "question": "Une des causes principales des accidents de motocycle est la présence:",
             "answers": [
-                "de l’huile et des cailloux sur la route",
+                "de l huile et des cailloux sur la route",
                 "la vitesse inconvenable",
                 "de creux et de trous sur la route"
             ],
-            "correctAnswer": "de creux et de trous sur la route"
+            "correctAnswer": "la vitesse inconvenable"
         },
         {
             "id": 95,
             "category": "Law",
-            "question": "Pour éviter d’être heurté sur une intersection, le motocycliste doit :",
+            "question": "Pour éviter d être heurté sur une intersection, le motocycliste doit :",
             "answers": [
                 "Ralentir et choisir la voie convenable",
                 "Compter sur les miroirs",
                 "Paser à la droite des véhicules garés sur lintersection."
             ],
-            "correctAnswer": "Paser à la droite des véhicules garés sur lintersection."
+            "correctAnswer": "Ralentir et choisir la voie convenable"
         },
         {
             "id": 96,
@@ -966,9 +1065,9 @@ export const questions: QuizData = {
             "answers": [
                 "Allumer les feux de détresse",
                 "Décélérer graduellement",
-                "S’écarter soudain vers la gauche"
+                "S écarter soudain vers la gauche"
             ],
-            "correctAnswer": "S’écarter soudain vers la gauche"
+            "correctAnswer": "S écarter soudain vers la gauche"
         },
         {
             "id": 98,
@@ -979,7 +1078,18 @@ export const questions: QuizData = {
                 "Sarrêter soudainement sur son chemin",
                 "Sécarter soudain de vous"
             ],
-            "correctAnswer": "Sécarter soudain de vous"
+            "correctAnswer": "Virer soudainement vers vous"
+        },
+        {
+            "id": 99,
+            "category": "Law",
+            "question": "Conduire le motocycle en zigzag entre les véhicules,",
+            "answers": [
+                "augmente la probabilité d avoir un accident de route",
+                "diminue la probabilité d avoir un accident de rout",
+                "None"
+            ],
+            "correctAnswer": "augmente la probabilité d avoir un accident de route"
         },
         {
             "id": 100,
@@ -990,34 +1100,34 @@ export const questions: QuizData = {
                 "Est considéré comme une infraction au code de la route",
                 "Est légal"
             ],
-            "correctAnswer": "Est légal"
+            "correctAnswer": "Est considéré comme une infraction au code de la route"
         },
         {
             "id": 101,
             "category": "Law",
-            "question": "Quels sont les avantages environnementaux de léco- conduite? (sélectionnez toutes les réponses correctes)",
+            "question": "Quels sont les avantages environnementaux de léco  conduite? (sélectionnez toutes les réponses correctes)",
             "answers": [
                 "Diminution des émissions de gaz à effet de serre (CO2)",
                 "Augmentation des émissions de gaz à effet de serre (CO2)",
-                "Réduction de l’embouteillage"
+                "Réduction de l embouteillage"
             ],
-            "correctAnswer": "Réduction de l’embouteillage"
+            "correctAnswer": "Diminution des émissions de gaz à effet de serre (CO2)"
         },
         {
             "id": 102,
             "category": "Law",
-            "question": "Quels sont les avantages financiers de léco-conduite ? (sélectionnez toutes les réponses correctes)",
+            "question": "Quels sont les avantages financiers de léco conduite ? (sélectionnez toutes les réponses correctes)",
             "answers": [
                 "Réduction du coût de lassurance",
                 "Réduction des coûts dentretien des véhicules",
-                "Réduction jusquà 50% du coût de carburant et de la dépense d’argent"
+                "Réduction jusquà 50  du coût de carburant et de la dépense d argent"
             ],
-            "correctAnswer": "Réduction jusquà 50% du coût de carburant et de la dépense d’argent"
+            "correctAnswer": "Réduction des coûts dentretien des véhicules"
         },
         {
             "id": 103,
             "category": "Law",
-            "question": "Quels sont les avantages de léco-conduite en termes de sécurité?",
+            "question": "Quels sont les avantages de léco conduite en termes de sécurité?",
             "answers": [
                 "Amélioration de la sécurité routière",
                 "Amélioration des compétences de conduite",
@@ -1028,35 +1138,35 @@ export const questions: QuizData = {
         {
             "id": 104,
             "category": "Law",
-            "question": "Quels sont les avantages sociaux de léco-conduite?",
+            "question": "Quels sont les avantages sociaux de léco conduite?",
             "answers": [
                 "Tout ce qui précède",
                 "Éviter le stress pendant la conduite",
                 "Laugmentation du confort des conducteurs et des passagers"
             ],
-            "correctAnswer": "Laugmentation du confort des conducteurs et des passagers"
+            "correctAnswer": "Tout ce qui précède"
         },
         {
             "id": 105,
             "category": "Law",
-            "question": "Quel outil devez-vous utiliser pour contrôler votre vitesse sur les autoroutes?",
+            "question": "Quel outil devez vous utiliser pour contrôler votre vitesse sur les autoroutes?",
             "answers": [
                 "Le freinage brusque",
                 "Le régulateur de vitesse",
                 "Freiner et accélérer à un rythme régulier"
             ],
-            "correctAnswer": "Freiner et accélérer à un rythme régulier"
+            "correctAnswer": "Le régulateur de vitesse"
         },
         {
             "id": 106,
             "category": "Law",
-            "question": "Quelle est la vitesse optimale pour léco-conduite?",
+            "question": "Quelle est la vitesse optimale pour léco conduite?",
             "answers": [
-                "80 km/h - 100 km/h",
-                "50 km/h - 80 km/h",
-                "40 km/h -50 km/h"
+                "80 km/h   100 km/h",
+                "50 km/h   80 km/h",
+                "40 km/h   50 km/h"
             ],
-            "correctAnswer": "40 km/h -50 km/h"
+            "correctAnswer": "50 km/h   80 km/h"
         },
         {
             "id": 107,
@@ -1067,12 +1177,12 @@ export const questions: QuizData = {
                 "4000 tr/min",
                 "3000 tr/min"
             ],
-            "correctAnswer": "3000 tr/min"
+            "correctAnswer": "2000 tr/min"
         },
         {
             "id": 108,
             "category": "Law",
-            "question": "Que se passe -t- il si vous dépassez 2000 tr/min en conduisant?",
+            "question": "Que se passe  t  il si vous dépassez 2000 tr/min en conduisant?",
             "answers": [
                 "La consommation de carburant diminue",
                 "La température du moteur augmente",
@@ -1092,6 +1202,17 @@ export const questions: QuizData = {
             "correctAnswer": "Tout ce qui précède"
         },
         {
+            "id": 110,
+            "category": "Law",
+            "question": "De combien la consommation de carburant est  elle réduite",
+            "answers": [
+                "1  à 2 ",
+                "1  à 3 ",
+                "2  à 3 "
+            ],
+            "correctAnswer": "1  à 2 "
+        },
+        {
             "id": 111,
             "category": "Law",
             "question": "Quel type dhuile est optimal pour lenvironnement?",
@@ -1100,12 +1221,12 @@ export const questions: QuizData = {
                 "Lhuile qui conserve lénergie et qui contient des additifs qui ne salissent pas le moteur",
                 "Lhuile végétale qui conserve lénergie"
             ],
-            "correctAnswer": "Lhuile végétale qui conserve lénergie"
+            "correctAnswer": "Lhuile qui conserve lénergie et qui contient des additifs qui réduisent la friction"
         },
         {
             "id": 112,
             "category": "Law",
-            "question": "Comment pouvez-vous contribuer à la durabilité des pneus?",
+            "question": "Comment pouvez vous contribuer à la durabilité des pneus?",
             "answers": [
                 "Examiner la pression des pneus au moins une fois par an pour conserver une faible résistance au roulement",
                 "Changer les pneus chaque année",
@@ -1119,21 +1240,21 @@ export const questions: QuizData = {
             "question": "Quel est lavantage de nettoyer vos filtres à air régulièrement?",
             "answers": [
                 "Tout ce qui précède",
-                "L’amélioration de la performance du moteur de 6 à 11%",
+                "L amélioration de la performance du moteur de 6 à 11 ",
                 "La réduction de la pollution de lair"
             ],
-            "correctAnswer": "La réduction de la pollution de lair"
+            "correctAnswer": "Tout ce qui précède"
         },
         {
             "id": 114,
             "category": "Law",
-            "question": "Que devez-vous faire lorsque la voiture sarrête pendant plus dune minute?",
+            "question": "Que devez vous faire lorsque la voiture sarrête pendant plus dune minute?",
             "answers": [
-                "L’éteindre",
+                "L éteindre",
                 "La mettre au point mort",
                 "Ne rien faire"
             ],
-            "correctAnswer": "Ne rien faire"
+            "correctAnswer": "L éteindre"
         },
         {
             "id": 115,
@@ -1144,23 +1265,23 @@ export const questions: QuizData = {
                 "Utiliser du carburant propre et conforme aux normes internationales",
                 "Acheter un nouveau moteur"
             ],
-            "correctAnswer": "Acheter un nouveau moteur"
+            "correctAnswer": "Changer leau du moteur régulièrement"
         },
         {
             "id": 116,
             "category": "Law",
-            "question": "Que devez-vous toujours vérifier après le remplissage de votre réservoir de carburant?",
+            "question": "Que devez vous toujours vérifier après le remplissage de votre réservoir de carburant?",
             "answers": [
                 "Le bouchon du réservoir de carburant est bien fermé",
                 "Le bouchon du réservoir de carburant est ouvert",
                 "La température du véhicule est stable"
             ],
-            "correctAnswer": "La température du véhicule est stable"
+            "correctAnswer": "Le bouchon du réservoir de carburant est bien fermé"
         },
         {
             "id": 117,
             "category": "Law",
-            "question": "Pourquoi est-il préférable de se garer à lombre?",
+            "question": "Pourquoi est il préférable de se garer à lombre?",
             "answers": [
                 "Réduction de la puissance du climatiseur au démarrage",
                 "Diminution de la consommation de carburant",
@@ -1177,7 +1298,7 @@ export const questions: QuizData = {
                 "0.3",
                 "0.2"
             ],
-            "correctAnswer": "0.2"
+            "correctAnswer": "0.1"
         },
         {
             "id": 119,
@@ -1188,7 +1309,18 @@ export const questions: QuizData = {
                 "Voyager léger",
                 "Conduire rapidement"
             ],
-            "correctAnswer": "Conduire rapidement"
+            "correctAnswer": "Voyager léger"
+        },
+        {
+            "id": 120,
+            "category": "Law",
+            "question": "Quest ce que léco conduite?",
+            "answers": [
+                "Leco conduite est lutilisation efficace de",
+                "leclairage dans la conduite grâce à une méthode simple et intelligente de la consommation deau",
+                "Leco conduite est lutilisation efficace du carburant dans le transport routier grâce à des pratiques de conduite facile, intelligente et responsable qui aident à réduire la consommation de carburant et la pollution de lair"
+            ],
+            "correctAnswer": "Leco conduite est lutilisation efficace du carburant dans le transport routier grâce à des pratiques de conduite facile, intelligente et responsable qui aident à réduire la consommation de carburant et la pollution de lair"
         },
         {
             "id": 121,
@@ -1197,9 +1329,9 @@ export const questions: QuizData = {
             "answers": [
                 "Attention, abaissement de la route",
                 "Attention, route glissante",
-                "Attention, casse-vitesse"
+                "Attention, casse vitesse"
             ],
-            "correctAnswer": "Attention, casse-vitesse"
+            "correctAnswer": "Attention, abaissement de la route"
         },
         {
             "id": 122,
@@ -1221,7 +1353,7 @@ export const questions: QuizData = {
                 "Attention,virage à droite",
                 "Le véhicule peut tourner à gauche"
             ],
-            "correctAnswer": "Le véhicule peut tourner à gauche"
+            "correctAnswer": "Attention, virage à gauche"
         },
         {
             "id": 124,
@@ -1243,7 +1375,7 @@ export const questions: QuizData = {
                 "Attention, succession de virages commençant à gauche",
                 "Attention, succession de virages commençant à droite"
             ],
-            "correctAnswer": "Attention, succession de virages commençant à droite"
+            "correctAnswer": "Attention, succession de virages commençant à gauche"
         },
         {
             "id": 126,
@@ -1268,6 +1400,17 @@ export const questions: QuizData = {
             "correctAnswer": "Attention, élèves ou école"
         },
         {
+            "id": 128,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Attention, animaux sur la route",
+                "Animaux errants",
+                "Interdit aux animaux"
+            ],
+            "correctAnswer": "Attention, animaux sur la route"
+        },
+        {
             "id": 129,
             "category": "Signs",
             "question": "",
@@ -1276,7 +1419,7 @@ export const questions: QuizData = {
                 "Attention, intersection sans priorité",
                 "Circuler à droite"
             ],
-            "correctAnswer": "Circuler à droite"
+            "correctAnswer": "Attention, route à deux voies"
         },
         {
             "id": 130,
@@ -1298,7 +1441,7 @@ export const questions: QuizData = {
                 "Attention, intersection sans priorité",
                 "Attention, priorité aux véhicules venant en face"
             ],
-            "correctAnswer": "Attention, priorité aux véhicules venant en face"
+            "correctAnswer": "Attention, intersection"
         },
         {
             "id": 132,
@@ -1309,7 +1452,7 @@ export const questions: QuizData = {
                 "Route menant à lautoroute",
                 "Attention, intersection sans priorité"
             ],
-            "correctAnswer": "Attention, intersection sans priorité"
+            "correctAnswer": "Attention, priorité aux véhicules venant en face"
         },
         {
             "id": 133,
@@ -1320,7 +1463,7 @@ export const questions: QuizData = {
                 "Attention, intersection sans priorité",
                 "Attention, priorité aux véhicules venant en face"
             ],
-            "correctAnswer": "Attention, priorité aux véhicules venant en face"
+            "correctAnswer": "Attention, intersection sans priorité"
         },
         {
             "id": 134,
@@ -1331,7 +1474,7 @@ export const questions: QuizData = {
                 "Fin de la limite de vitesse",
                 "Stationnement à durée limitée"
             ],
-            "correctAnswer": "Stationnement à durée limitée"
+            "correctAnswer": "Route prioritaire"
         },
         {
             "id": 135,
@@ -1342,7 +1485,7 @@ export const questions: QuizData = {
                 "Attention, passage piéton",
                 "Nest pas réservé aux piétons"
             ],
-            "correctAnswer": "Nest pas réservé aux piétons"
+            "correctAnswer": "Attention, passage piéton"
         },
         {
             "id": 136,
@@ -1367,6 +1510,17 @@ export const questions: QuizData = {
             "correctAnswer": "Attention, route étroite"
         },
         {
+            "id": 138,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Priorité à droite",
+                "Route étroite à droite",
+                "Attention, route étroite à gauche"
+            ],
+            "correctAnswer": "Attention, route étroite à gauche"
+        },
+        {
             "id": 139,
             "category": "Signs",
             "question": "",
@@ -1386,7 +1540,7 @@ export const questions: QuizData = {
                 "Attention, roches ou de chute de roches sur la route",
                 "Région montagnarde"
             ],
-            "correctAnswer": "Région montagnarde"
+            "correctAnswer": "Attention, roches ou de chute de roches sur la route"
         },
         {
             "id": 141,
@@ -1397,7 +1551,7 @@ export const questions: QuizData = {
                 "Attention, feu de circulation",
                 "Attention, rond point"
             ],
-            "correctAnswer": "Attention, rond point"
+            "correctAnswer": "Attention, feu de circulation"
         },
         {
             "id": 142,
@@ -1419,7 +1573,7 @@ export const questions: QuizData = {
                 "Céder le passage, route prioritaire",
                 "Attention, dangers divers"
             ],
-            "correctAnswer": "Attention, dangers divers"
+            "correctAnswer": "Céder le passage, route prioritaire"
         },
         {
             "id": 144,
@@ -1430,7 +1584,7 @@ export const questions: QuizData = {
                 "Fin de priorité",
                 "Attention, priorité aux véhicules venant en face"
             ],
-            "correctAnswer": "Attention, priorité aux véhicules venant en face"
+            "correctAnswer": "Fin de priorité"
         },
         {
             "id": 145,
@@ -1441,7 +1595,7 @@ export const questions: QuizData = {
                 "Fin de priorité",
                 "Attention, priorité aux véhicules venant en face"
             ],
-            "correctAnswer": "Attention, priorité aux véhicules venant en face"
+            "correctAnswer": "Dépassement interdit aux véhicules de tous genres"
         },
         {
             "id": 146,
@@ -1450,9 +1604,9 @@ export const questions: QuizData = {
             "answers": [
                 "Route à voie unique",
                 "Sens interdit",
-                "Arrêtez-vous"
+                "Arrêtez vous"
             ],
-            "correctAnswer": "Arrêtez-vous"
+            "correctAnswer": "Arrêtez vous"
         },
         {
             "id": 147,
@@ -1463,7 +1617,18 @@ export const questions: QuizData = {
                 "Route à voie unique",
                 "Stationnement interdit"
             ],
-            "correctAnswer": "Stationnement interdit"
+            "correctAnswer": "Sens interdit aux véhicules de tous genres"
+        },
+        {
+            "id": 148,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Sens interdit",
+                "None",
+                "Dangers divers"
+            ],
+            "correctAnswer": "Sens interdit"
         },
         {
             "id": 149,
@@ -1474,7 +1639,7 @@ export const questions: QuizData = {
                 "Dépassement interdit aux véhicules de tous genres",
                 "Sens interdit"
             ],
-            "correctAnswer": "Sens interdit"
+            "correctAnswer": "Dépassement interdit aux camions"
         },
         {
             "id": 150,
@@ -1540,7 +1705,7 @@ export const questions: QuizData = {
                 "Passage obligatoire pour les voitures",
                 "Voie résérvée aux deux roues"
             ],
-            "correctAnswer": "Voie résérvée aux deux roues"
+            "correctAnswer": "Passage interdit aux deux roues"
         },
         {
             "id": 156,
@@ -1551,7 +1716,7 @@ export const questions: QuizData = {
                 "Voie réservée aux deux roues",
                 "Voie résérvée aux deux roues"
             ],
-            "correctAnswer": "Voie résérvée aux deux roues"
+            "correctAnswer": "Passage interdit aux deux roues"
         },
         {
             "id": 157,
@@ -1563,6 +1728,17 @@ export const questions: QuizData = {
                 "Passage interdit aux poussettes"
             ],
             "correctAnswer": "Passage interdit aux poussettes"
+        },
+        {
+            "id": 158,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Interdit aux voitures de stationner",
+                "Voie résérvée aux voitures",
+                "None"
+            ],
+            "correctAnswer": "Interdit aux voitures de stationner"
         },
         {
             "id": 159,
@@ -1595,7 +1771,7 @@ export const questions: QuizData = {
                 "Passage interdit aux aux camions de plus de 10 m de longueur",
                 "Passage interdit aux camions transportant plus de 6.5 tonnes de cargaison"
             ],
-            "correctAnswer": "Passage interdit aux camions transportant plus de 6.5 tonnes de cargaison"
+            "correctAnswer": "Passage interdit aux aux camions de plus de 10 m de longueur"
         },
         {
             "id": 162,
@@ -1617,7 +1793,7 @@ export const questions: QuizData = {
                 "Début de signalisation restrictive",
                 "Excès de vitesse interdit"
             ],
-            "correctAnswer": "Excès de vitesse interdit"
+            "correctAnswer": "Fin de signalisation restrictive"
         },
         {
             "id": 164,
@@ -1628,7 +1804,7 @@ export const questions: QuizData = {
                 "Limite de vitesse",
                 "Début de limite de vitesse"
             ],
-            "correctAnswer": "Début de limite de vitesse"
+            "correctAnswer": "Fin de limites de vitesse"
         },
         {
             "id": 165,
@@ -1650,7 +1826,18 @@ export const questions: QuizData = {
                 "Tourner à gauche",
                 "Obligation daller tout droit ou de tourner à droite"
             ],
-            "correctAnswer": "Obligation daller tout droit ou de tourner à droite"
+            "correctAnswer": "Tourner à gauche"
+        },
+        {
+            "id": 167,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Interdit de tourner à gauche ou à droite",
+                "Obligation daller tout droit",
+                "Il est possible de tourner à gauche ou à droite"
+            ],
+            "correctAnswer": "Il est possible de tourner à gauche ou à droite"
         },
         {
             "id": 168,
@@ -1705,7 +1892,7 @@ export const questions: QuizData = {
                 "Passage obligatoire à droite ou à gauche",
                 "Interdit de tourner à gauche ou à droite"
             ],
-            "correctAnswer": "Interdit de tourner à gauche ou à droite"
+            "correctAnswer": "Passage obligatoire à droite ou à gauche"
         },
         {
             "id": 173,
@@ -1727,7 +1914,7 @@ export const questions: QuizData = {
                 "Fin de la piste cyclable",
                 "Passage interdit aux piétons et aux deux roues"
             ],
-            "correctAnswer": "Passage interdit aux piétons et aux deux roues"
+            "correctAnswer": "Voie réservée uniquement aux piétons et aux deux roues"
         },
         {
             "id": 175,
@@ -1738,7 +1925,7 @@ export const questions: QuizData = {
                 "Interdit de tourner à droite",
                 "Passage obligatoire à droite"
             ],
-            "correctAnswer": "Passage obligatoire à droite"
+            "correctAnswer": "Interdit de tourner à droite"
         },
         {
             "id": 176,
@@ -1750,6 +1937,17 @@ export const questions: QuizData = {
                 "Interdit de tourner"
             ],
             "correctAnswer": "Interdit de tourner"
+        },
+        {
+            "id": 177,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Fin de dépassement interdit aux bus",
+                "Voie réservée aux bus",
+                "None"
+            ],
+            "correctAnswer": "Fin de dépassement interdit aux bus"
         },
         {
             "id": 178,
@@ -1771,7 +1969,7 @@ export const questions: QuizData = {
                 "Route obligatoire pour les camions",
                 "Stationnement interdit aux camions"
             ],
-            "correctAnswer": "Stationnement interdit aux camions"
+            "correctAnswer": "Passage interdit aux camions dont le poids de la cargaison dépasse les 6.5 tonnes"
         },
         {
             "id": 180,
@@ -1782,7 +1980,7 @@ export const questions: QuizData = {
                 "Route obligatoire pour les camions",
                 "Passage interdit aux camions transportant des matières dangereuses"
             ],
-            "correctAnswer": "Passage interdit aux camions transportant des matières dangereuses"
+            "correctAnswer": "Passage interdit aux camions remorque"
         },
         {
             "id": 181,
@@ -1804,7 +2002,7 @@ export const questions: QuizData = {
                 "Fin de la zone \"dépassement interdit\"",
                 "Fin de la zone \"interdit aux camions de dépasser\""
             ],
-            "correctAnswer": "Fin de la zone \"interdit aux camions de dépasser\""
+            "correctAnswer": "Fin de la zone \"dépassement interdit\""
         },
         {
             "id": 183,
@@ -1815,7 +2013,7 @@ export const questions: QuizData = {
                 "Attention, route à deux voies",
                 "Voie réservée aux camions"
             ],
-            "correctAnswer": "Voie réservée aux camions"
+            "correctAnswer": "Fin de la zone \"interdit aux camions de dépasser\""
         },
         {
             "id": 184,
@@ -1826,7 +2024,7 @@ export const questions: QuizData = {
                 "Dépassement interdit aux véhicules de tous genres",
                 "Sens interdit"
             ],
-            "correctAnswer": "Sens interdit"
+            "correctAnswer": "Stationnement interdit"
         },
         {
             "id": 185,
@@ -1837,7 +2035,7 @@ export const questions: QuizData = {
                 "Stationnement interdit",
                 "Sens interdit"
             ],
-            "correctAnswer": "Sens interdit"
+            "correctAnswer": "Interdit de sarrêter et de stationner"
         },
         {
             "id": 186,
@@ -1851,6 +2049,17 @@ export const questions: QuizData = {
             "correctAnswer": "Obligation daller tout droit"
         },
         {
+            "id": 187,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Direction vers la gauche",
+                "Interdit de stationner à gauche",
+                "Interdit de tourner à gauche"
+            ],
+            "correctAnswer": "Direction vers la gauche"
+        },
+        {
             "id": 188,
             "category": "Signs",
             "question": "",
@@ -1859,7 +2068,7 @@ export const questions: QuizData = {
                 "Interdit de stationner à droite",
                 "Interdit de tourner à droite"
             ],
-            "correctAnswer": "Interdit de tourner à droite"
+            "correctAnswer": "Direction vers la droite"
         },
         {
             "id": 189,
@@ -1870,7 +2079,7 @@ export const questions: QuizData = {
                 "Rond point",
                 "Interdit de tourner"
             ],
-            "correctAnswer": "Interdit de tourner"
+            "correctAnswer": "Rond point"
         },
         {
             "id": 190,
@@ -1922,7 +2131,7 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "Voie réservée aux piétons",
-                "Passage piéton au-dessus de la route",
+                "Passage piéton au dessus de la route",
                 "Fin de la voie réservée aux piétons"
             ],
             "correctAnswer": "Fin de la voie réservée aux piétons"
@@ -1936,7 +2145,7 @@ export const questions: QuizData = {
                 "Stationnement interdit aux deux roues",
                 "Passage interdit aux deux roues"
             ],
-            "correctAnswer": "Passage interdit aux deux roues"
+            "correctAnswer": "Piste cyclable"
         },
         {
             "id": 196,
@@ -1947,7 +2156,7 @@ export const questions: QuizData = {
                 "Obligation de tourner à gauche",
                 "Interdit de stationner à gauche"
             ],
-            "correctAnswer": "Interdit de stationner à gauche"
+            "correctAnswer": "Interdit de touner à gauche"
         },
         {
             "id": 197,
@@ -1961,6 +2170,17 @@ export const questions: QuizData = {
             "correctAnswer": "Hopital"
         },
         {
+            "id": 198,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Attention, passage piéton",
+                "Fin de la voie réservée aux piétons",
+                "Attention, passage interdit aux piétons"
+            ],
+            "correctAnswer": "Attention, passage piéton"
+        },
+        {
             "id": 199,
             "category": "Signs",
             "question": "",
@@ -1969,7 +2189,7 @@ export const questions: QuizData = {
                 "Piste cyclable",
                 "Passage interdit aux deux roues"
             ],
-            "correctAnswer": "Passage interdit aux deux roues"
+            "correctAnswer": "Voie résrvéee aux deux roues"
         },
         {
             "id": 200,
@@ -1998,11 +2218,11 @@ export const questions: QuizData = {
             "category": "Signs",
             "question": "",
             "answers": [
-                "Pont au-dessus de la route",
+                "Pont au dessus de la route",
                 "Fin de lautoroute",
                 "Attention, route étroite"
             ],
-            "correctAnswer": "Attention, route étroite"
+            "correctAnswer": "Fin de lautoroute"
         },
         {
             "id": 203,
@@ -2024,7 +2244,7 @@ export const questions: QuizData = {
                 "Zone de stationnement réservée aux handicapés",
                 "Réservé aux médecins"
             ],
-            "correctAnswer": "Réservé aux médecins"
+            "correctAnswer": "Centre dassistance"
         },
         {
             "id": 205,
@@ -2046,18 +2266,29 @@ export const questions: QuizData = {
                 "Stationnement à durée limitée",
                 "Stationnement interdit"
             ],
-            "correctAnswer": "Stationnement interdit"
+            "correctAnswer": "Stationnement à durée limitée"
         },
         {
             "id": 207,
             "category": "Signs",
             "question": "",
             "answers": [
-                "Zone de stationnement pour tous genres de véhicules- deux voitures taxi au maximum",
+                "Zone de stationnement pour tous genres de véhicules  deux voitures taxi au maximum",
                 "Stationnement interdit aux taxis",
                 "Zone de stationnement pour taxis"
             ],
             "correctAnswer": "Zone de stationnement pour taxis"
+        },
+        {
+            "id": 208,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Enlèvement immédiat",
+                "Information",
+                "None"
+            ],
+            "correctAnswer": "Enlèvement immédiat"
         },
         {
             "id": 209,
@@ -2090,7 +2321,7 @@ export const questions: QuizData = {
                 "Intersection dangereuse",
                 "Virage indirect vers la gauche"
             ],
-            "correctAnswer": "Virage indirect vers la gauche"
+            "correctAnswer": "Voie principlae"
         },
         {
             "id": 212,
@@ -2101,7 +2332,7 @@ export const questions: QuizData = {
                 "Zone de stationnement",
                 "Stationnement à durée limitée"
             ],
-            "correctAnswer": "Stationnement à durée limitée"
+            "correctAnswer": "Zone de stationnement"
         },
         {
             "id": 213,
@@ -2123,7 +2354,7 @@ export const questions: QuizData = {
                 "Restaurant",
                 "Rafraîchissements"
             ],
-            "correctAnswer": "Rafraîchissements"
+            "correctAnswer": "Restaurant"
         },
         {
             "id": 215,
@@ -2134,7 +2365,7 @@ export const questions: QuizData = {
                 "Restaurant",
                 "Station service"
             ],
-            "correctAnswer": "Station service"
+            "correctAnswer": "Téléphone publique"
         },
         {
             "id": 216,
@@ -2145,7 +2376,7 @@ export const questions: QuizData = {
                 "Garage",
                 "Restaurant"
             ],
-            "correctAnswer": "Restaurant"
+            "correctAnswer": "Station service"
         },
         {
             "id": 217,
@@ -2167,7 +2398,18 @@ export const questions: QuizData = {
                 "Zone de camping et camping cars",
                 "Stationnement interdit"
             ],
-            "correctAnswer": "Stationnement interdit"
+            "correctAnswer": "Zone de camping et camping cars"
+        },
+        {
+            "id": 219,
+            "category": "Signs",
+            "question": "",
+            "answers": [
+                "Virage",
+                "Ralentissez",
+                "Virage indirect vers la gauche"
+            ],
+            "correctAnswer": "Virage"
         },
         {
             "id": 220,
@@ -2186,10 +2428,10 @@ export const questions: QuizData = {
             "question": "",
             "answers": [
                 "Attention, virage à droite",
-                "Attention, casse-vitesse",
+                "Attention, casse vitesse",
                 "Attention, abaissement de la route"
             ],
-            "correctAnswer": "Attention, abaissement de la route"
+            "correctAnswer": "Attention, casse vitesse"
         },
         {
             "id": 222,
@@ -2233,7 +2475,7 @@ export const questions: QuizData = {
                 "La circulation des piétions, poussettes, personnes malades et handicapées",
                 "Ranger de côté toute chose qui empêche la circulation sur la route"
             ],
-            "correctAnswer": "Ranger de côté toute chose qui empêche la circulation sur la route"
+            "correctAnswer": "La circulation des piétions, poussettes, personnes malades et handicapées"
         },
         {
             "id": 226,
@@ -2255,7 +2497,18 @@ export const questions: QuizData = {
                 "Pour sarrêter",
                 "Pour essayer les freins"
             ],
-            "correctAnswer": "Pour essayer les freins"
+            "correctAnswer": "Pour éviter un danger"
+        },
+        {
+            "id": 228,
+            "category": "Safety",
+            "question": "Le conducteur doit rouler:",
+            "answers": [
+                "A droite, quand un autre véhicule se dirige vers lui dans lautre sens",
+                "A gauche, quand un autre conducteur est en train de le dépasser",
+                "A gauche, quand un autre véhicule se dirige vers lui dans lautre sens"
+            ],
+            "correctAnswer": "A droite, quand un autre véhicule se dirige vers lui dans lautre sens"
         },
         {
             "id": 229,
@@ -2277,7 +2530,7 @@ export const questions: QuizData = {
                 "Conduire au point mort sur une descente",
                 "Rouler lentement sur le côté gauche de la route"
             ],
-            "correctAnswer": "Rouler lentement sur le côté gauche de la route"
+            "correctAnswer": "Conduire au point mort sur une descente"
         },
         {
             "id": 231,
@@ -2286,9 +2539,9 @@ export const questions: QuizData = {
             "answers": [
                 "Sassurer quil peut effectuer le dépassement sans aucun danger pour lui ou pour autrui",
                 "Rouler dans le sens indiqué",
-                "Faire demi-tour au milieu de la route dans une zone peuplée"
+                "Faire demi tour au milieu de la route dans une zone peuplée"
             ],
-            "correctAnswer": "Faire demi-tour au milieu de la route dans une zone peuplée"
+            "correctAnswer": "Faire demi tour au milieu de la route dans une zone peuplée"
         },
         {
             "id": 232,
@@ -2332,7 +2585,18 @@ export const questions: QuizData = {
                 "Rouler à droite",
                 "Dépasser par la doite sur les routes à voie unique"
             ],
-            "correctAnswer": "Dépasser par la doite sur les routes à voie unique"
+            "correctAnswer": "Dépasser par la gauche"
+        },
+        {
+            "id": 236,
+            "category": "Safety",
+            "question": "En cas de croisement, le conducteur doit:",
+            "answers": [
+                "Conserver la droite autant que possible",
+                "Conserver la gauche autant que possible",
+                "None"
+            ],
+            "correctAnswer": "Conserver la droite autant que possible"
         },
         {
             "id": 237,
@@ -2401,6 +2665,17 @@ export const questions: QuizData = {
             "correctAnswer": "Sur les ponts et dans les tunnels"
         },
         {
+            "id": 243,
+            "category": "Safety",
+            "question": "Il est interdit deffectuer un dépassement:",
+            "answers": [
+                "Si plusieurs véhicules sont arrêtées en raison dune entrave à la circulation, ou dun signal darrêt",
+                "Si le côté gauche de la route sera libre après le dépassement",
+                "None"
+            ],
+            "correctAnswer": "Si plusieurs véhicules sont arrêtées en raison dune entrave à la circulation, ou dun signal darrêt"
+        },
+        {
             "id": 244,
             "category": "Safety",
             "question": "Il est interdit deffectuer un dépassement:",
@@ -2409,7 +2684,7 @@ export const questions: QuizData = {
                 "Si la largeur de la route est suffisante pour effectuer le dépassement facilement et sans danger",
                 "Si les voies de la route sont séparées par des lignes discontinues"
             ],
-            "correctAnswer": "Si les voies de la route sont séparées par des lignes discontinues"
+            "correctAnswer": "Au sommet dune montée, lorsque la visibilité nest pas assez bonne, pourvu que le côté gauche de la route soit libre"
         },
         {
             "id": 245,
@@ -2431,7 +2706,7 @@ export const questions: QuizData = {
                 "Sur les routes montagnardes, étroites, ou à forte pente",
                 "Sur les routes larges"
             ],
-            "correctAnswer": "Sur les routes larges"
+            "correctAnswer": "Sur les routes montagnardes, étroites, ou à forte pente"
         },
         {
             "id": 247,
@@ -2442,7 +2717,7 @@ export const questions: QuizData = {
                 "Vérifier que la route quil désire croiser est libre",
                 "Poursuivre son chemin sans vérifier sil y a dautres véhicules sur la route"
             ],
-            "correctAnswer": "Poursuivre son chemin sans vérifier sil y a dautres véhicules sur la route"
+            "correctAnswer": "Vérifier que la route quil désire croiser est libre"
         },
         {
             "id": 248,
@@ -2478,6 +2753,17 @@ export const questions: QuizData = {
             "correctAnswer": "Tourner à vitesse modérée après avoir vérifé quil ne dérange pas les autres ni ne les met en danger"
         },
         {
+            "id": 251,
+            "category": "Safety",
+            "question": "Il est préférable de garder une distance de sécurité:",
+            "answers": [
+                "De tous les côtés du véhicule",
+                "None",
+                "A gauche et à droite du véhicule seulement"
+            ],
+            "correctAnswer": "De tous les côtés du véhicule"
+        },
+        {
             "id": 252,
             "category": "Safety",
             "question": "Il est important de garder une distance de sécurité, parce quelle:",
@@ -2486,7 +2772,7 @@ export const questions: QuizData = {
                 "Permet aux autres véhicules dintégrer la circulation",
                 "Empêche le conducteur de se distraire"
             ],
-            "correctAnswer": "Empêche le conducteur de se distraire"
+            "correctAnswer": "Donne un espace pour réagir"
         },
         {
             "id": 253,
@@ -2519,7 +2805,7 @@ export const questions: QuizData = {
                 "Ralentir et se préparer à sarrêter",
                 "Sarrêter"
             ],
-            "correctAnswer": "Sarrêter"
+            "correctAnswer": "Ralentir et se préparer à sarrêter"
         },
         {
             "id": 256,
@@ -2527,10 +2813,10 @@ export const questions: QuizData = {
             "question": "Lorsquun pneu éclate sur la route, il faut:",
             "answers": [
                 "Abandonner le volant",
-                "Enlever le pieds délicatement de la pédale d’accélérateur pour permettre au véhicule de ralentir, retenir le volant des deux mains, et se dégager de la route",
+                "Enlever le pieds délicatement de la pédale d accélérateur pour permettre au véhicule de ralentir, retenir le volant des deux mains, et se dégager de la route",
                 "Appuyer sur la pédale de frein pour ralentir, et se dégager de la route"
             ],
-            "correctAnswer": "Appuyer sur la pédale de frein pour ralentir, et se dégager de la route"
+            "correctAnswer": "Enlever le pieds délicatement de la pédale d accélérateur pour permettre au véhicule de ralentir, retenir le volant des deux mains, et se dégager de la route"
         },
         {
             "id": 257,
@@ -2552,7 +2838,7 @@ export const questions: QuizData = {
                 "Placer le triangle de présignalisation et allumer les feux pour alerter les autres conducteurs",
                 "Placer le Triangle de présignalisation et allumer les clignoteurs pour alerter les autres conducteurs"
             ],
-            "correctAnswer": "Placer le Triangle de présignalisation et allumer les clignoteurs pour alerter les autres conducteurs"
+            "correctAnswer": "Attendre le véhicule dassistance"
         },
         {
             "id": 259,
@@ -2563,7 +2849,18 @@ export const questions: QuizData = {
                 "Ralentir",
                 "Circuler à une vitesse inférieure à la vitesse indiquée"
             ],
-            "correctAnswer": "Circuler à une vitesse inférieure à la vitesse indiquée"
+            "correctAnswer": "Circuler à une vitesse proche de celle de la circulation sur cette autoroute"
+        },
+        {
+            "id": 260,
+            "category": "Safety",
+            "question": "Si la voie est délimitée par deux lignes adjacentes, lune continue et lautre discontinue:",
+            "answers": [
+                "Il nest pas permis au conducteur de franchir la ligne discontinue si cette ligne est directement à sa gauche",
+                "Il est permis au conducteur de franchir la ligne discontinue si cette ligne est directement à sa gauche",
+                "Il nest pas permis au conducteur de franchir la ligne continue si cette ligne est directement à sa gauche"
+            ],
+            "correctAnswer": "Il nest pas permis au conducteur de franchir la ligne discontinue si cette ligne est directement à sa gauche"
         },
         {
             "id": 261,
@@ -2585,7 +2882,7 @@ export const questions: QuizData = {
                 "Se diriger immédiatement vers le garage",
                 "Arrêter le moteur"
             ],
-            "correctAnswer": "Arrêter le moteur"
+            "correctAnswer": "Appuyer répétitivement sur la pédale de frein"
         },
         {
             "id": 263,
@@ -2596,7 +2893,7 @@ export const questions: QuizData = {
                 "Rouler à la vitesse maximale et allumer les feux",
                 "Rouler à la vitesse maximale"
             ],
-            "correctAnswer": "Rouler à la vitesse maximale"
+            "correctAnswer": "Rouler en dessous de la vitesse maximale, selon les conditions de la route"
         },
         {
             "id": 264,
@@ -2640,7 +2937,7 @@ export const questions: QuizData = {
                 "Arrive le premier",
                 "Tourne vers la droite"
             ],
-            "correctAnswer": "Tourne vers la droite"
+            "correctAnswer": "Arrive le premier et qui est déjà entré dans lintersection"
         },
         {
             "id": 268,
@@ -2651,7 +2948,18 @@ export const questions: QuizData = {
                 "Jaune continu",
                 "Jaune clignotant"
             ],
-            "correctAnswer": "Jaune clignotant"
+            "correctAnswer": "Rouge clignotant"
+        },
+        {
+            "id": 269,
+            "category": "Safety",
+            "question": "Lorsque le conducteur partage la route avec un camion, il est bon de se rappeler que les",
+            "answers": [
+                "Ont besoin dun rayon plus petit pour tourner",
+                "Ont besoin de moins de temps pour dépasser",
+                "sur une descente"
+            ],
+            "correctAnswer": "Ont besoin dun rayon plus petit pour tourner"
         },
         {
             "id": 270,
@@ -2673,7 +2981,7 @@ export const questions: QuizData = {
                 "Sil a moins de 21 ans",
                 "Il na pas le droit de refuser le test en aucun cas"
             ],
-            "correctAnswer": "Il na pas le droit de refuser le test en aucun cas"
+            "correctAnswer": "Dans les cas durgence"
         },
         {
             "id": 272,
@@ -2684,7 +2992,7 @@ export const questions: QuizData = {
                 "Les feux de brouillard et/ ou les feux de croisement",
                 "Les feux de brouillard et/ ou les feux de route"
             ],
-            "correctAnswer": "Les feux de brouillard et/ ou les feux de route"
+            "correctAnswer": "Les feux de brouillard et/ ou les feux de croisement"
         },
         {
             "id": 273,
@@ -2717,7 +3025,7 @@ export const questions: QuizData = {
                 "Donner la priorité au conducteur qui se trouve à gauche",
                 "Sarrêter et attendre la police routière"
             ],
-            "correctAnswer": "Sarrêter et attendre la police routière"
+            "correctAnswer": "Agir comme sil était sur une intersection sans feux"
         },
         {
             "id": 276,
@@ -2728,7 +3036,7 @@ export const questions: QuizData = {
                 "Changer de voie",
                 "Accélérer"
             ],
-            "correctAnswer": "Accélérer"
+            "correctAnswer": "Maintenir ta vitesse ou ralentir"
         },
         {
             "id": 277,
@@ -2750,7 +3058,18 @@ export const questions: QuizData = {
                 "Le conducteur venant de la gauche doit céder le passage à lautre conducteur",
                 "Chacun passe sans céder la priorité à lautre conducteur"
             ],
-            "correctAnswer": "Chacun passe sans céder la priorité à lautre conducteur"
+            "correctAnswer": "Le conducteur venant de la gauche doit céder le passage à lautre conducteur"
+        },
+        {
+            "id": 279,
+            "category": "Safety",
+            "question": "Avant de dépasser, dêtre dépassé, ou deffectuer un virage, le conducteur doit:",
+            "answers": [
+                "Ralentir et activer le clignotant au moment du virage",
+                "Ralentir, activer le clignotant bien en avance pour avertir les autres usagers de la route, vérifier les miroirs et les angles morts",
+                "Ralentir, activer les clignotants pour avertir les autres conducteurs, et vérifier les miroirs"
+            ],
+            "correctAnswer": "Ralentir, activer le clignotant bien en avance pour avertir les autres usagers de la route, vérifier les miroirs et les angles morts"
         },
         {
             "id": 280,
@@ -2794,7 +3113,7 @@ export const questions: QuizData = {
                 "Circuler dans une direction autre que la direction indiquée",
                 "Rester éveillé et en contrôle de son véhicule"
             ],
-            "correctAnswer": "Rester éveillé et en contrôle de son véhicule"
+            "correctAnswer": "Circuler dans une direction autre que la direction indiquée"
         },
         {
             "id": 284,
@@ -2816,7 +3135,7 @@ export const questions: QuizData = {
                 "Effectuer un demi tour au milieu de la route",
                 "Vérifier quil peut effectuer le dépassement sans aucun danger"
             ],
-            "correctAnswer": "Vérifier quil peut effectuer le dépassement sans aucun danger"
+            "correctAnswer": "Effectuer un demi tour au milieu de la route"
         },
         {
             "id": 286,
@@ -2841,6 +3160,17 @@ export const questions: QuizData = {
             "correctAnswer": "Ceci nest pas permis en aucun cas"
         },
         {
+            "id": 288,
+            "category": "Safety",
+            "question": "Le conducteur peut continuer",
+            "answers": [
+                "Sil est derrière un véhicule prioritaire",
+                "(ambulance, camion pompier",
+                "Sil se dirige vers la droite"
+            ],
+            "correctAnswer": "Sil est derrière un véhicule prioritaire"
+        },
+        {
             "id": 289,
             "category": "Safety",
             "question": "Il est interdit au conducteur de:",
@@ -2860,7 +3190,7 @@ export const questions: QuizData = {
                 "Quand il veut dépasser un autre véhicule",
                 "Quand la visibilité est bonne"
             ],
-            "correctAnswer": "Quand la visibilité est bonne"
+            "correctAnswer": "Quand il roule à une vitesse inférieure à la vitesse applicable sur cette route"
         },
         {
             "id": 291,
@@ -2871,7 +3201,7 @@ export const questions: QuizData = {
                 "0.3 grammes/litre",
                 "0.4 grammes/litre"
             ],
-            "correctAnswer": "0.4 grammes/litre"
+            "correctAnswer": "0.5 grammes/litre"
         },
         {
             "id": 292,
@@ -2882,7 +3212,7 @@ export const questions: QuizData = {
                 "0 grammes/litre",
                 "0.3 grammes/litre"
             ],
-            "correctAnswer": "0.3 grammes/litre"
+            "correctAnswer": "0 grammes/litre"
         },
         {
             "id": 293,
@@ -2893,7 +3223,7 @@ export const questions: QuizData = {
                 "Tenir le volant dune main, et prendre un appel téléphonique de lautre",
                 "Conduire avec les deux mains, et répondre aux appels téléphoniques via bluetooth"
             ],
-            "correctAnswer": "Conduire avec les deux mains, et répondre aux appels téléphoniques via bluetooth"
+            "correctAnswer": "Utiliser tous les moyens de télécommunication"
         },
         {
             "id": 294,
@@ -2904,7 +3234,7 @@ export const questions: QuizData = {
                 "120 km/heure",
                 "80 km/heure"
             ],
-            "correctAnswer": "80 km/heure"
+            "correctAnswer": "100 km/heure"
         },
         {
             "id": 295,
@@ -2926,7 +3256,7 @@ export const questions: QuizData = {
                 "50 km/heure",
                 "60 km/heure"
             ],
-            "correctAnswer": "60 km/heure"
+            "correctAnswer": "50 km/heure"
         },
         {
             "id": 297,
@@ -2940,15 +3270,26 @@ export const questions: QuizData = {
             "correctAnswer": "La marche arrière est absolument interdite"
         },
         {
+            "id": 298,
+            "category": "Safety",
+            "question": "Sur les routes ordinaires, Le",
+            "answers": [
+                "None",
+                "20 metres",
+                "30 metres"
+            ],
+            "correctAnswer": "30 metres"
+        },
+        {
             "id": 299,
             "category": "Safety",
-            "question": "Sur lautoroute, Le triangle de présignalisation doit être placé devant ou derrière le véhicule, selon la direction de la circulation, à ____ du véhicule:",
+            "question": "Sur lautoroute, Le triangle de présignalisation doit être placé devant ou derrière le véhicule, selon la direction de la circulation, à du véhicule:",
             "answers": [
                 "70 metres",
                 "50 metres",
                 "60 metres"
             ],
-            "correctAnswer": "60 metres"
+            "correctAnswer": "50 metres"
         },
         {
             "id": 300,
@@ -2959,7 +3300,7 @@ export const questions: QuizData = {
                 "150 metres",
                 "130 metres"
             ],
-            "correctAnswer": "130 metres"
+            "correctAnswer": "150 metres"
         },
         {
             "id": 301,
@@ -2981,18 +3322,18 @@ export const questions: QuizData = {
                 "Le véhicule peut être confisqué",
                 "Ceci est considéré comme contravention de classe 2"
             ],
-            "correctAnswer": "Ceci est considéré comme contravention de classe 2"
+            "correctAnswer": "Toutes les réponses précédentes sont correctes"
         },
         {
             "id": 303,
             "category": "Law",
             "question": "La durée de vie maximale du pneu est atteinte:",
             "answers": [
-                "à 6 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm -lequel arrive en premier",
-                "à 4 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier",
-                "à 5 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier"
+                "à 6 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm   lequel arrive en premier",
+                "à 4 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm   lequel arrive en premier",
+                "à 5 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm   lequel arrive en premier"
             ],
-            "correctAnswer": "à 5 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier"
+            "correctAnswer": "à 6 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm   lequel arrive en premier"
         },
         {
             "id": 304,
@@ -3014,7 +3355,7 @@ export const questions: QuizData = {
                 "Trois mois",
                 "Un mois"
             ],
-            "correctAnswer": "Un mois"
+            "correctAnswer": "Deux mois"
         },
         {
             "id": 306,
@@ -3025,7 +3366,18 @@ export const questions: QuizData = {
                 "Peuvent être franchises",
                 "Peuvent être chevauchées"
             ],
-            "correctAnswer": "Peuvent être chevauchées"
+            "correctAnswer": "Peuvent être franchises"
+        },
+        {
+            "id": 307,
+            "category": "Safety",
+            "question": "Il est strictement interdit que",
+            "answers": [
+                "Le bleu ou le jaune",
+                "Le blanc ou le bleu",
+                "Le blanc ou le jaune"
+            ],
+            "correctAnswer": "Le blanc ou le jaune"
         },
         {
             "id": 308,
@@ -3058,7 +3410,7 @@ export const questions: QuizData = {
                 "Voitures",
                 "Camions"
             ],
-            "correctAnswer": "Camions"
+            "correctAnswer": "Piétons"
         },
         {
             "id": 311,
@@ -3067,9 +3419,9 @@ export const questions: QuizData = {
             "answers": [
                 "est donnée au véhicule qui descend",
                 "est donnée au véhicule qui monte",
-                "dépend de la route elle-même"
+                "dépend de la route elle même"
             ],
-            "correctAnswer": "dépend de la route elle-même"
+            "correctAnswer": "est donnée au véhicule qui monte"
         },
         {
             "id": 312,
@@ -3138,6 +3490,17 @@ export const questions: QuizData = {
             "correctAnswer": "A droite"
         },
         {
+            "id": 318,
+            "category": "Safety",
+            "question": "En dépassant une bicyclette ou une motocyclette, le conducteur doit maintenir une distance latérale dau moins:",
+            "answers": [
+                "75 CM",
+                "65 Cm",
+                "70 Cm"
+            ],
+            "correctAnswer": "75 CM"
+        },
+        {
             "id": 319,
             "category": "Safety",
             "question": "En dépassant une voiture ou tout autre véhicule, le conducteur doit maintenir une distance latérale dau moins:",
@@ -3146,7 +3509,7 @@ export const questions: QuizData = {
                 "45 CM",
                 "60 CM"
             ],
-            "correctAnswer": "60 CM"
+            "correctAnswer": "50 CM"
         },
         {
             "id": 320,
@@ -3168,7 +3531,7 @@ export const questions: QuizData = {
                 "Une seule voiture pour plusieurs voitures dans le sens opposé",
                 "Plusieurs poids lourds pour une seule voiture dans le sens opposé"
             ],
-            "correctAnswer": "Plusieurs poids lourds pour une seule voiture dans le sens opposé"
+            "correctAnswer": "Une seule voiture pour plusieurs voitures dans le sens opposé"
         },
         {
             "id": 322,
@@ -3210,9 +3573,20 @@ export const questions: QuizData = {
             "answers": [
                 "Ralentissez rapidement",
                 "Attention, la circulation est bloquée",
-                "Attention, arrêtez-vous (sapplique à tous les usagers de la route)"
+                "Attention, arrêtez vous (sapplique à tous les usagers de la route)"
             ],
-            "correctAnswer": "Attention, arrêtez-vous (sapplique à tous les usagers de la route)"
+            "correctAnswer": "Attention, arrêtez vous (sapplique à tous les usagers de la route)"
+        },
+        {
+            "id": 326,
+            "category": "Safety",
+            "question": "Si les deux bras du gendarme sont tendus horizontalement, cela signifie:",
+            "answers": [
+                "Arrêtez vous, sapplique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme",
+                "Ralentissez, sapplique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme",
+                "Cédez la voie, sapplique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme"
+            ],
+            "correctAnswer": "Arrêtez vous, sapplique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme"
         },
         {
             "id": 327,
@@ -3223,7 +3597,7 @@ export const questions: QuizData = {
                 "Dune plaque dimmatriculation arrière",
                 "De deux plaques dimmatriculation à lavant ou à larrière, portant le numéro denregistrement du véhicule"
             ],
-            "correctAnswer": "De deux plaques dimmatriculation à lavant ou à larrière, portant le numéro denregistrement du véhicule"
+            "correctAnswer": "Dune plaque dimmatriculation à lavant et dune autre à larrière portant le numéro denregistrement du véhicule"
         },
         {
             "id": 328,
@@ -3256,7 +3630,7 @@ export const questions: QuizData = {
                 "il faut sortir / monter du côté gauche du véhicule",
                 "il faut sortir / monter du côté droit du véhicule"
             ],
-            "correctAnswer": "il faut sortir / monter du côté droit du véhicule"
+            "correctAnswer": "il faut sortir / monter du côté le plus convenable"
         },
         {
             "id": 331,
@@ -3265,9 +3639,9 @@ export const questions: QuizData = {
             "answers": [
                 "que la voiture est en panne",
                 "quil se dirige vers la gauche",
-                "Ralentis et arrêtes-toi"
+                "Ralentis et arrêtes toi"
             ],
-            "correctAnswer": "Ralentis et arrêtes-toi"
+            "correctAnswer": "Ralentis et arrêtes toi"
         },
         {
             "id": 332,
@@ -3278,7 +3652,7 @@ export const questions: QuizData = {
                 "quil se dirige vers la gauche",
                 "quil ralentit"
             ],
-            "correctAnswer": "quil ralentit"
+            "correctAnswer": "quil se dirige vers la gauche"
         },
         {
             "id": 333,
@@ -3300,7 +3674,18 @@ export const questions: QuizData = {
                 "que le conducteur le fasse rapidement",
                 "Il est absolument interdit aux véhicules qui se dirigent vers la droite de franchir un feu rouge"
             ],
-            "correctAnswer": "Il est absolument interdit aux véhicules qui se dirigent vers la droite de franchir un feu rouge"
+            "correctAnswer": "que le conducteur sarrête et vérifie quil peut le faire sans aucun danger sur les piétons et la circulation"
+        },
+        {
+            "id": 335,
+            "category": "Safety",
+            "question": "Quand la voie est marquée par une ligne contine,",
+            "answers": [
+                "Il est interdit de franchir la ligne pour passer dune file à une autre",
+                "Il est permis de franchir la ligne à condition que le conducteur le fasse rapidement",
+                "None"
+            ],
+            "correctAnswer": "Il est interdit de franchir la ligne pour passer dune file à une autre"
         },
         {
             "id": 336,
@@ -3311,7 +3696,7 @@ export const questions: QuizData = {
                 "12 ans",
                 "8 ans"
             ],
-            "correctAnswer": "8 ans"
+            "correctAnswer": "10 ans"
         },
         {
             "id": 337,
@@ -3322,7 +3707,7 @@ export const questions: QuizData = {
                 "De causer des accidents routiers, et de bloquer les drainages",
                 "Déranger la police routière dans son travail"
             ],
-            "correctAnswer": "Déranger la police routière dans son travail"
+            "correctAnswer": "De causer des accidents routiers, et de bloquer les drainages"
         },
         {
             "id": 338,
@@ -3338,7 +3723,7 @@ export const questions: QuizData = {
         {
             "id": 339,
             "category": "Safety",
-            "question": "Il est interdit de sarrêter et de stationner à une distance de moins de _____ des sommets des montées, des virages, des intersections, des ronds points, et des feux.",
+            "question": "Il est interdit de sarrêter et de stationner à une distance de moins de des sommets des montées, des virages, des intersections, des ronds points, et des feux.",
             "answers": [
                 "50 mètres",
                 "30 mètres",
@@ -3377,7 +3762,7 @@ export const questions: QuizData = {
                 "Franchir les lignes blanches discontinues",
                 "Circuler entre les lignes blanches"
             ],
-            "correctAnswer": "Circuler entre les lignes blanches"
+            "correctAnswer": "Rouler sur les lignes blanches"
         }
     ]
 }
