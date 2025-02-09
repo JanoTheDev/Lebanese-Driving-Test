@@ -109,13 +109,23 @@ export default function Home() {
 
       <footer>
         <div className="attribution">
-          <span>Made by </span>
+          <span>Made with ❤️ by </span>
           <a
             href="https://github.com/JanoTheDev"
             target="_blank"
             rel="noopener noreferrer"
           >
             JanoTheDev
+          </a>
+        </div>
+        <div className="attribution">
+          <span>Report issues on </span>
+          <a
+            href="https://github.com/JanoTheDev/Lebanese-Driving-Test"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
           </a>
         </div>
       </footer>
