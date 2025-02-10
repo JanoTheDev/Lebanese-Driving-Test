@@ -20,7 +20,7 @@ onMounted(async () => {
   }
 
   try {
-    const module = await import(`../data/questions_${lang}.ts`)
+    const module = await import(`../../public/data/questions_${lang}.ts`)
     if (!module.default || !module.default.questions) {
       throw new Error('Invalid quiz data format')
     }
