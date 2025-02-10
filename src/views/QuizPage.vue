@@ -4,13 +4,14 @@ import { useRoute, useRouter } from 'vue-router'
 import type { Language, QuizData } from '../types/quiz'
 import { SUPPORTED_LANGUAGES } from '../types/quiz'
 import Quiz from '../components/Quiz.vue'
+import { getQuestions } from '../data'
 
 const route = useRoute()
 const router = useRouter()
 const quizData = ref<QuizData | null>(null)
 const isLoading = ref(true)
 
-onMounted(async () => {
+onMounted(() => {
   isLoading.value = true
   const lang = route.params.lang as Language
   
@@ -20,11 +21,11 @@ onMounted(async () => {
   }
 
   try {
-    const module = await import(`../../public/data/questions_${lang}.ts`)
-    if (!module.default || !module.default.questions) {
+    const questions = getQuestions(lang)
+    if (!questions || !questions.questions) {
       throw new Error('Invalid quiz data format')
     }
-    quizData.value = module.default
+    quizData.value = questions
   } catch (error) {
     console.error(`Failed to load quiz data for language: ${lang}`, error)
     router.push('/')

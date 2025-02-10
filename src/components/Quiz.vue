@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { getQuestions } from '../data'
 
 interface Question {
   id: number
@@ -95,10 +96,10 @@ const uiText = {
   }
 } as const
 
-onMounted(async () => {
+onMounted(() => {
   try {
-    const module = await import(`../data/questions_${props.lang}`)
-    initializeQuestions(module.default)
+    const module = getQuestions(props.lang)
+    initializeQuestions(module)
     startTimer()
     loadTheme()
   } catch (error) {
