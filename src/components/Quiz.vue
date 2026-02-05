@@ -125,6 +125,48 @@ const unansweredQuestions = computed(() => {
 	return questions.value.length - answeredQuestions.value;
 });
 
+// Watch lang prop to update local text if needed, but we are primarily driving this from local state now potentially?
+// Actually simpler: we keep the prop as initial, but we might want to emit an event or just handle it locally if the router doesn't reload.
+// The user request implies switching "while doing the test".
+// If we change the route, the component might remount and lose state.
+// So we should handle language state internally or update the URL without remounting.
+// For now, let's make `lang` a ref that defaults to props.lang, but since props are reactive, we need to be careful.
+// A better approach for "switching while doing" is to have a local reactive lang that overrides the prop, or just use the prop if we push to router without reload.
+// Let's use a local ref initialized from props.
+const currentLang = ref<'en' | 'fr' | 'ar'>(props.lang);
+
+const switchLanguage = (newLang: 'en' | 'fr' | 'ar') => {
+	if (currentLang.value === newLang) return;
+	
+	currentLang.value = newLang;
+	// Update the URL to match without reloading
+	// router.replace(`/${newLang}/quiz`); // This might trigger remount if key changes in parent
+	
+	try {
+        // Fetch new questions
+		const module = getQuestions(newLang);
+        
+        // We need to map the CURRENT questions to the new language questions by ID
+        // so the user stays on the same questions, just translated.
+        const newQuestions = questions.value.map(q => {
+            const translatedQ = module.questions.find(nq => nq.id === q.id);
+            if (!translatedQ) return q; // Fallback
+             // Preserve category and imageUrl from our custom logic if needed, but the find should get raw data.
+             // We need to re-apply the signs image logic if it's missing in raw.
+             // Actually, initializeQuestions did some transforms. Let's replicate that simply:
+             return {
+                 ...translatedQ,
+                 category: q.category, // Keep the category as we set it (std names)
+                 imageUrl: q.imageUrl // Keep the image url
+             };
+        });
+        
+        questions.value = newQuestions;
+	} catch (error) {
+		console.error('Failed to switch language:', error);
+	}
+};
+
 onMounted(() => {
 	try {
 		const module = getQuestions(props.lang);
@@ -157,11 +199,13 @@ const initializeQuestions = (localizedQuizData: QuizData) => {
 	);
 	const selectedLaw = shuffleArray(lawQuestions).slice(0, 10);
 
-	questions.value = shuffleArray([
-		...selectedSigns,
+    // Order: 10 General (Safety), 10 Law, 10 Signs
+    // Do NOT shuffle the final result
+	questions.value = [
 		...selectedSafety,
 		...selectedLaw,
-	]);
+        ...selectedSigns,
+	];
 };
 
 const startTimer = () => {
@@ -221,14 +265,14 @@ const handleSubmit = () => {
 
 	if (score.value >= 26) {
 		toast({
-			title: uiText[props.lang].passed,
-			description: uiText[props.lang].minScore,
-			variant: 'destructive',
+			title: uiText[currentLang.value].passed,
+			description: uiText[currentLang.value].minScore,
+			variant: 'default', // Changed to default for success
 		});
 	} else {
 		toast({
-			title: uiText[props.lang].failed,
-			description: uiText[props.lang].minScore,
+			title: uiText[currentLang.value].failed,
+			description: uiText[currentLang.value].minScore,
 			variant: 'destructive',
 		});
 	}
@@ -269,7 +313,7 @@ function shuffleArray<T>(array: T[]): T[] {
 	<div
 		:class="[
 			'min-h-screen flex flex-col items-center justify-center p-4',
-			{ rtl: lang === 'ar' },
+			{ rtl: currentLang === 'ar' },
 		]"
 	>
 		<Button
@@ -278,11 +322,25 @@ function shuffleArray<T>(array: T[]): T[] {
 			size="icon"
 			class="fixed top-4 right-4 z-50"
 			:aria-label="
-				theme === 'light' ? uiText[lang].toggleDark : uiText[lang].toggleLight
+				theme === 'light' ? uiText[currentLang].toggleDark : uiText[currentLang].toggleLight
 			"
 		>
 			<Icon :name="theme === 'light' ? 'moon' : 'sun'" class="h-5 w-5" />
 		</Button>
+
+		<!-- Language Switcher -->
+		<div class="fixed top-4 left-4 z-50 flex gap-2">
+			<Button
+				v-for="l in ['en', 'fr', 'ar']"
+				:key="l"
+				@click="switchLanguage(l as 'en' | 'fr' | 'ar')"
+				variant="outline"
+				size="sm"
+				:class="{ 'bg-primary text-primary-foreground': currentLang === l }"
+			>
+				{{ l.toUpperCase() }}
+			</Button>
+		</div>
 
 		<Card
 			class="fixed top-4 left-4 right-4 mx-auto w-[calc(100%-2rem)] max-w-2xl z-40"
@@ -293,7 +351,7 @@ function shuffleArray<T>(array: T[]): T[] {
 					class="h-2"
 				/>
 				<div class="mt-2 flex items-center justify-between">
-					<Label>{{ uiText[lang].timeRemaining }}:</Label>
+					<Label>{{ uiText[currentLang].timeRemaining }}:</Label>
 					<Label class="font-bold">
 						{{ formatTime(timeRemaining).minutes }}:{{
 							formatTime(timeRemaining).seconds
@@ -307,7 +365,7 @@ function shuffleArray<T>(array: T[]): T[] {
 			class="top-32 mt-20 w-full max-w-screen-sm p-4 bg-background border rounded-lg shadow-lg z-30"
 		>
 			<h3 class="text-lg font-semibold mb-4">
-				{{ uiText[lang].questionsLeft }}: {{ unansweredQuestions }}
+				{{ uiText[currentLang].questionsLeft }}: {{ unansweredQuestions }}
 			</h3>
 			<div class="grid grid-cols-12 gap-1">
 				<Button
@@ -330,17 +388,17 @@ function shuffleArray<T>(array: T[]): T[] {
 				</Button>
 			</div>
 			<div class="mt-4 text-sm">
-				<span class="text-green-500">●</span> {{ uiText[lang].answered }}:
+				<span class="text-green-500">●</span> {{ uiText[currentLang].answered }}:
 				{{ answeredQuestions }}
 			</div>
 			<div class="text-sm">
-				<span class="text-gray-500">●</span> {{ uiText[lang].unanswered }}:
+				<span class="text-gray-500">●</span> {{ uiText[currentLang].unanswered }}:
 				{{ unansweredQuestions }}
 			</div>
 		</Card>
 
 		<div v-if="isSubmitted && !showReview" class="quiz-results mt-4">
-			<h2 class="text-2xl font-bold mb-4">{{ uiText[lang].score }}</h2>
+			<h2 class="text-2xl font-bold mb-4">{{ uiText[currentLang].score }}</h2>
 			<div class="score text-4xl font-bold mb-4">
 				{{ score }} {{ uiText[lang].outOf }} {{ questions.length }}
 			</div>
@@ -362,7 +420,7 @@ function shuffleArray<T>(array: T[]): T[] {
 					@click="toggleReview(true)"
 					class="bg-blue-500 hover:bg-blue-600 text-white"
 				>
-					{{ uiText[lang].review }}
+					{{ uiText[currentLang].review }}
 				</Button>
 				<Button
 					@click="router.push('/')"
@@ -377,7 +435,7 @@ function shuffleArray<T>(array: T[]): T[] {
 			v-else-if="showReview"
 			class="review-container w-full max-w-2xl p-4 mt-4"
 		>
-			<h2 class="text-2xl font-bold mb-4">{{ uiText[lang].review }}</h2>
+			<h2 class="text-2xl font-bold mb-4">{{ uiText[currentLang].review }}</h2>
 			<div class="score-display text-xl font-bold mb-4">
 				{{ score }} {{ uiText[lang].outOf }} {{ questions.length }}
 			</div>
@@ -455,28 +513,28 @@ function shuffleArray<T>(array: T[]): T[] {
 						@click="goToQuestion(currentQuestion - 1)"
 						:disabled="currentQuestion === 0"
 					>
-						{{ uiText[lang].previous }}
+						{{ uiText[currentLang].previous }}
 					</Button>
 					<Button
 						v-if="currentQuestion === questions.length - 1"
 						@click="handleSubmit"
 						:disabled="Object.keys(userAnswers).length !== questions.length"
 					>
-						{{ uiText[lang].submit }}
+						{{ uiText[currentLang].submit }}
 					</Button>
 					<Button
 						v-else
 						@click="goToQuestion(currentQuestion + 1)"
 						:disabled="currentQuestion === questions.length - 1"
 					>
-						{{ uiText[lang].next }}
+						{{ uiText[currentLang].next }}
 					</Button>
 				</CardFooter>
 			</Card>
 		</div>
 
 		<div class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-			<span>{{ uiText[lang].madeBy }} </span>
+			<span>{{ uiText[currentLang].madeBy }} </span>
 			<a
 				href="https://github.com/JanoTheDev"
 				target="_blank"
